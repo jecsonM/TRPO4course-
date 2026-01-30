@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<h1>Главная страница</h1>
+
+<p>Вы вошли как: <strong>@ViewBag.UserName</strong></p>
+
+<h3>Меню:</h3>
+<ul>
+    <li><a asp-controller="Account" asp-action="Logout">Выход</a></li>
+</ul>
