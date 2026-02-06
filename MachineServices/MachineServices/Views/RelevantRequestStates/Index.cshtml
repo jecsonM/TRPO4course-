@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MachineServices.Models.RelevantRequestState>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SetDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestState)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SetDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Request.RequestId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestState.RequestStateId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RelevantRequestStateId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RelevantRequestStateId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RelevantRequestStateId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
