@@ -152,3 +152,4 @@ C:\Users\222909071097-11\Downloads\TRPO4course-\MachineServices\MachineServices\
 C:\Users\222909071097-11\Downloads\TRPO4course-\MachineServices\MachineServices\obj\Debug\net8.0\MachineServices.pdb
 C:\Users\222909071097-11\Downloads\TRPO4course-\MachineServices\MachineServices\obj\Debug\net8.0\MachineServices.genruntimeconfig.cache
 C:\Users\222909071097-11\Downloads\TRPO4course-\MachineServices\MachineServices\obj\Debug\net8.0\ref\MachineServices.dll
+C:\Users\222909071097-11\Downloads\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

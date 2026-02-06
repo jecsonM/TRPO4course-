@@ -16,7 +16,7 @@ order_state_id int Identity(1,1) PRIMARY KEY NOT NULL,
 order_state_name varchar(30) NOT NULL
 );
 
---Справочники
+--пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 CREATE TABLE Clients 
 (
@@ -66,8 +66,8 @@ CREATE TABLE Staff
 (
 staff_id int Identity(1,1) PRIMARY KEY NOT NULL,
 role_id int,
-login varchar(30) NOT NULL,
-password_hash varchar(max) NOT NULL,
+login  varchar(max) NOT NULL,
+password_hash varbinary(max) NULL,
 
 CONSTRAINT FK_Staff_Roles 
         FOREIGN KEY (role_id) 

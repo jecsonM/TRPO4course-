@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QIFzTrTtNYM=",
+  "dgSpecHash": "AD/DRf11XSs=",
   "success": true,
   "projectFilePath": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\MachineServices.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.23\\microsoft.entityframeworkcore.abstractions.8.0.23.nupkg.sha512",
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.23\\microsoft.entityframeworkcore.analyzers.8.0.23.nupkg.sha512",
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.23\\microsoft.entityframeworkcore.design.8.0.23.nupkg.sha512",
+    "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.23\\microsoft.entityframeworkcore.inmemory.8.0.23.nupkg.sha512",
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.23\\microsoft.entityframeworkcore.relational.8.0.23.nupkg.sha512",
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.23\\microsoft.entityframeworkcore.sqlserver.8.0.23.nupkg.sha512",
     "C:\\Users\\222909071097-11\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.23\\microsoft.entityframeworkcore.tools.8.0.23.nupkg.sha512",

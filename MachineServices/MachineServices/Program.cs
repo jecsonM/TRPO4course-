@@ -1,4 +1,6 @@
+using MachineServices.Interfaces;
 using MachineServices.Models;
+using MachineServices.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,8 +21,6 @@ namespace MachineServices
             builder.Services.AddDbContext<MyDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
-
-
             
             // Добавляем контекст БД
 
@@ -31,9 +31,10 @@ namespace MachineServices
                     options.LoginPath = "/Account/Login";
                     options.AccessDeniedPath = "/Account/AccessDenied";
                 });
+
+            builder.Services.AddSingleton<IPasswordService, PasswordService>();
+
             var app = builder.Build();
-
-
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

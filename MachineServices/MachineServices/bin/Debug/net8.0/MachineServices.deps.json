@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Cookies": "2.3.9",
           "Microsoft.EntityFrameworkCore": "8.0.23",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.23",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.23"
         },
@@ -476,6 +477,17 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "8.0.23.0",
+            "fileVersion": "8.0.2325.60904"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.23": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.23"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
             "assemblyVersion": "8.0.23.0",
             "fileVersion": "8.0.2325.60904"
           }
@@ -1296,6 +1308,13 @@
       "sha512": "sha512-Kx8uA4WOHjNjgri0++YdQ3twhS/tootOa9BL36vRDcT1G2n7TDUadoSi9gMz5AcHS3klyCMzVMel9JI/GhVEQg==",
       "path": "microsoft.entityframeworkcore.design/8.0.23",
       "hashPath": "microsoft.entityframeworkcore.design.8.0.23.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.23": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sOcZYsy4QaBnmw+UX6Ar3PB8ldvAcIhCEhspgC+bJ4mVzTieZdgMQNzHmba0Rpg6YixHgbwpDH8ffyCA4jbLxA==",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.23",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.8.0.23.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.23": {
       "type": "package",

@@ -11,7 +11,7 @@ public partial class Staff
 
     public string Login { get; set; } = null!;
 
-    public string PasswordHash { get; set; } = null!;
+    public byte[]? PasswordHash { get; set; } = null!;
 
     public virtual ICollection<MachineService> MachineServices { get; set; } = new List<MachineService>();
 
