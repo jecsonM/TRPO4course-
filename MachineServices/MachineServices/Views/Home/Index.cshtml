@@ -22,5 +22,10 @@
     <li><a asp-controller="Roles" asp-action="Index">Управление Ролями</a></li>
     <li><a asp-controller="ServiceProvisions" asp-action="Index">Управление Предоставляемыми услугами</a></li>
     <li><a asp-controller="Staffs" asp-action="Index">Управление Сотрудниками</a></li>
-    <li><a asp-controller="Account" asp-action="Logout">Выход</a></li>
+    
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <button type="submit" class="nav-link btn btn-link">
+            Выход
+        </button>
+    </form>
 </ul>

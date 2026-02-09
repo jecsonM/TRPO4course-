@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\relevantrequeststatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\relevantrequeststatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machineservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machineservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\staffscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,6 +35,10 @@
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\relevantrequeststatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\relevantrequeststatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\relevantorderstatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\relevantorderstatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,6 +55,18 @@
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machineservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machineservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -70,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,188 +87,214 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-09T08:11:10.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MachineServices\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MachineServices\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-06T10:34:11.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StaffsController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\StaffsController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\StaffsController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\StaffsController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\StaffsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAwwEgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:32:53.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceProvisionsController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:31:55.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RolesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RolesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RolesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RolesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:31:27.308Z",
+              "WhenOpened": "2026-02-09T08:10:05.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RequestStatesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:30:58.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RequestsController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestsController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestsController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestsController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RequestsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:30:12.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "RelevantRequestStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:29:44.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MachinesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwDsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:25:41.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwFoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T06:42:29.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MachineServicesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:25:04.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "RelevantOrderStatesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:29:11.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "RelevantCostsController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:28:28.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
+              "Title": "RelevantOrderStatesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:29:11.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestsController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestsController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestsController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RequestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:30:12.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestStatesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:30:58.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RolesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RolesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RolesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:31:27.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceProvisionsController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:31:55.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaffsController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\StaffsController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\StaffsController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\StaffsController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\StaffsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:32:53.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "OrderStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:27:37.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrdersController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\OrdersController.cs",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrdersController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:26:23.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MachineServicesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:25:04.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "MachinesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:25:41.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:42:29.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\appsettings.json",
               "RelativeDocumentMoniker": "MachineServices\\appsettings.json",
@@ -268,8 +302,7 @@
               "RelativeToolTip": "MachineServices\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-30T12:08:15.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-30T12:08:15.006Z"
             }
           ]
         }

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MachineServices.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MachineServices.Models;
 
 namespace MachineServices.Controllers.ForTables
 {
+    [Authorize]
     public class StaffsController : Controller
     {
         private readonly MyDbContext _context;

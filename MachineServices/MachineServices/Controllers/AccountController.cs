@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Security.Claims;
 using System.Text;
 
@@ -21,14 +22,20 @@ namespace MachineServices.Controllers
             _context = context;
             _passwordService = passwordService;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Login(string login, string password)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostLogin(string login, string password)
         {
             
             Staff user = await _context.Staff
                 .FirstOrDefaultAsync(u => u.Login == login);
 
-            if (user != null)
+            if (user != null && password != null)
             {
                 if (user.PasswordHash == null)
                 {
