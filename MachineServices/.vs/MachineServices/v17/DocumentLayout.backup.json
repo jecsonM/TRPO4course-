@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -51,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\fortables\\machinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|c:\\users\\222909071097-11\\downloads\\trpo4course-\\machineservices\\machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -66,24 +70,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MachineServices\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MachineServices\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-06T10:34:11.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "StaffsController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\StaffsController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\StaffsController.cs",
@@ -96,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ServiceProvisionsController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ServiceProvisionsController.cs",
@@ -109,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RolesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RolesController.cs",
@@ -122,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "RequestStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestStatesController.cs",
@@ -135,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RequestsController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RequestsController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RequestsController.cs",
@@ -148,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "RelevantRequestStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantRequestStatesController.cs",
@@ -161,7 +165,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "MachinesController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:25:41.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\ClientsController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwFoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T06:42:29.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MachineServicesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachineServicesController.cs",
@@ -174,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RelevantOrderStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantOrderStatesController.cs",
@@ -187,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RelevantCostsController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\RelevantCostsController.cs",
@@ -200,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "OrderStatesController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\OrderStatesController.cs",
@@ -213,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\OrdersController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\OrdersController.cs",
@@ -226,20 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MachinesController.cs",
-              "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "ToolTip": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "RelativeToolTip": "MachineServices\\Controllers\\ForTables\\MachinesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T10:25:41.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\appsettings.json",
               "RelativeDocumentMoniker": "MachineServices\\appsettings.json",
