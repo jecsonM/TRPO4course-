@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
-using MachineServices.Interfaces;
+using WpfAppWorkStations.Interfaces.Services;
 
-namespace MachineServices.Services
+namespace WpfAppWorkStations.Services
 {
     public class PasswordService : IPasswordService
     {
@@ -14,11 +14,11 @@ namespace MachineServices.Services
 
             byte[] result = new byte[64];
             Span<byte> resultSpan = result;
-            GetNewSalt( resultSpan.Slice(start:2) );
+            GetNewSalt(resultSpan.Slice(start: 2));
             Rfc2898DeriveBytes.Pbkdf2(
                 password,
                 resultSpan.Slice(start: 2, DEFAULT_SALT_LEN),
-                resultSpan.Slice(start: 2+DEFAULT_SALT_LEN),
+                resultSpan.Slice(start: 2 + DEFAULT_SALT_LEN),
                 iterations: 600_013,
                 HashAlgorithmName.SHA256
             );
@@ -29,7 +29,7 @@ namespace MachineServices.Services
             //1 hints
             resultSpan[1] = 0b_0000_0000;
 
-            
+
 
             return result;
         }
@@ -47,7 +47,7 @@ namespace MachineServices.Services
                         Span<byte> passwordHashSpan = passwordHash;
 
                         Span<byte> salt = expectedHashSpan.Slice(start: 2, length: DEFAULT_SALT_LEN);
-                        
+
                         Rfc2898DeriveBytes.Pbkdf2(
                             password,
                             salt,
@@ -64,20 +64,20 @@ namespace MachineServices.Services
                         break;
                     }
                 default:
-                    { 
+                    {
                         throw new NotImplementedException();
                     }
             }
 
 
             return result;
-            
+
         }
 
 
         public static void GetNewSalt(Span<byte> salt)
         {
-            RandomNumberGenerator.Fill(salt);   
+            RandomNumberGenerator.Fill(salt);
         }
     }
 }

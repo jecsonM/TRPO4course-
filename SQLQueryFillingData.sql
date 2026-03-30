@@ -1,4 +1,4 @@
-INSERT INTO RequestStates
+INSERT INTO "MachineServiceDBScheme".RequestStates
 VALUES 
 ('Отклонена'),
 ('Создана'),
@@ -12,7 +12,7 @@ VALUES
 ('Директор'),
 ('Системный администратор');
 
-INSERT INTO OrderStates
+INSERT INTO "MachineServiceDBScheme".OrderStates
 VALUES 
 ('Отменён'),
 ('Сформирован'),
@@ -20,7 +20,7 @@ VALUES
 ('Одобрен'),
 ('Завершён');
 
-INSERT INTO Clients
+INSERT INTO "MachineServiceDBScheme".Clients
 VALUES ('ООО Станко строй', 'Вайтенко Константин Игоревич', '79308551200', 'stankoStroy@mail.ru', 
 'г. Санкт Петрбург ул. Пушкина д.26 к2', '123456789101', '772501001', NULL),
 ('ООО Консерв завод', 'Морозов Иван Олегович', '78885553300', 'konservZavod@mail.ru', 
@@ -28,60 +28,60 @@ VALUES ('ООО Станко строй', 'Вайтенко Константин
 ('АО РоссРуда', 'Козлов Виктор Игоревич', '76661235500', 'rossRuda@mail.ru', 
 'г. Москва ул. Поликарпова д.1 ', '444455559101', '772501001', NULL);
 
-INSERT INTO Requests
+INSERT INTO "MachineServiceDBScheme".Requests
 VALUES
 (1,'2026-01-25 16:30:00.000 +01:00','г. Санкт Петрбург ул. Пушкина д.26 к2'),
 (2,'2026-01-29 14:15:00.000 +01:00','г. Санкт Петрбург ул. Морозова д.6'),
 (1,'2026-01-29 14:30:00.000 +01:00','г. Санкт Петрбург ул. Пушкина д.26 к2');
 
-INSERT INTO Machines
+INSERT INTO "MachineServiceDBScheme".Machines
 VALUES
 (1, 'A125B124', 'IRONMAC IT-560', NULL),
 (1, 'A15CF244', 'IRONMAC IT-560', NULL),
 (2, '12345678CCBBDD', 'КМТ KE50/1000', NULL);
 
-INSERT INTO Staff
+INSERT INTO "MachineServiceDBScheme".Staff
 VALUES (4, 'sysAdmin', NULL);
 
 
-INSERT INTO Orders
+INSERT INTO "MachineServiceDBScheme".Orders
 VALUES
 (1,'2026-01-26 16:30:00.000 +01:00'),
 (2,'2026-01-30 16:30:00.000 +01:00'),
 (3,'2026-01-30 16:30:00.000 +01:00');
 
-INSERT INTO MachineServices
+INSERT INTO "MachineServiceDBScheme".MachineServices
 VALUES
 (1, 'Замена гаек'),
 (1, 'Натяжка ремней'),
 (1, 'Удаление ржавчины');
 
-INSERT INTO RelevantOrderStates
+INSERT INTO "MachineServiceDBScheme".RelevantOrderStates
 VALUES
 (1, 2, '2026-01-27 16:30:00.000 +01:00'),
 (1, 4, '2026-01-27 16:30:00.000 +01:00'),
 (2, 2, '2026-01-27 16:30:00.000 +01:00');
 
 
-INSERT INTO MachinesInOrder
+INSERT INTO "MachineServiceDBScheme".MachinesInOrder
 VALUES
 (1, 1),
 (1, 2),
 (2, 3);
 
-INSERT INTO ServiceProvisions
+INSERT INTO "MachineServiceDBScheme".ServiceProvisions
 VALUES 
 (1,1,1, 2),
 (1,2,1, 3),
 (2,3,1, 5);
 
-INSERT INTO RelevantRequestStates
+INSERT INTO "MachineServiceDBScheme".RelevantRequestStates
 VALUES 
 (1, 1, '2026-01-25 16:30:00.000 +01:00'),
 (1, 2, '2026-01-26 16:30:00.000 +01:00'),
 (1, 3, '2026-01-27 16:30:00.000 +01:00');
 
-INSERT INTO RelevantCosts
+INSERT INTO "MachineServiceDBScheme".RelevantCosts
 VALUES 
 (1, 1, 250.55,'2026-01-10 16:30:00.000 +01:00'),
 (2, 1, 600.28,'2026-01-10 16:32:00.000 +01:00'),

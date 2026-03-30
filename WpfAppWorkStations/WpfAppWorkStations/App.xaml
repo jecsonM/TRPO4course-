@@ -1,0 +1,34 @@
+﻿<Application x:Class="WpfAppWorkStations.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfAppWorkStations">
+    <Application.Resources>
+        <Color x:Key="MainBack">#A4E5D9</Color>
+        <Color x:Key="LightBack">#c8f4de</Color>
+        <Color x:Key="DarkBack">#66C6BA</Color>
+        <Color x:Key="Accent">#FAAB41</Color>
+        <Color x:Key="Dark">#649DAD</Color> 
+
+        <SolidColorBrush x:Key="MainBackBrush" Color="{StaticResource MainBack}"/>
+        <SolidColorBrush x:Key="LightBackBrush" Color="{StaticResource LightBack}"/>
+        <SolidColorBrush x:Key="DarkBackBrush" Color="{StaticResource DarkBack}"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource Accent}"/>
+        <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource Dark}"/>
+
+
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="{StaticResource LightBackBrush}"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="Margin" Value="30"/>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="{StaticResource MainBackBrush}"/>
+        </Style>
+        
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource DarkBrush}"/>
+        </Style>
+    </Application.Resources>
+</Application>

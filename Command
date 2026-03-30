@@ -1,0 +1,7 @@
+Scaffold-DbContext "Host=localhost;Port=5432;Database=FamilyRestaraunt;Username=FamilyRestarauntAdmin;Password=FamilyRestarauntMaster;SSL Mode=Prefer;" Npgsql.EntityFrameworkCore.PostgreSQL -schemas "FamiliRestarauntDB" -outputDir EF.Files -ContextDir Context -Force
+
+host=localhost port=5432 dbname=FamilyRestarauntDB user=FamilyRestarauntAdmin password=FamilyRestarauntMaster
+
+Server=localhost;Port=5432;User Id=FamilyRestarauntAdmin;Password=FamilyRestarauntMaster;Database=FamilyRestarauntDB;
+
+Host=localhost;Port=5432;Database=FamilyRestaraunt;Username=FamilyRestarauntAdmin;Password=FamilyRestarauntMaster;SSL Mode=Prefer
