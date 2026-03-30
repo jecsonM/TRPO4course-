@@ -16,7 +16,7 @@ order_state_id int NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 order_state_name varchar(30) NOT NULL
 );
 
---�����������
+--Справочники
 
 CREATE TABLE "MachineServiceDBScheme".Clients 
 (
