@@ -21,10 +21,18 @@
             <Setter Property="Padding" Value="3"/>
             <Setter Property="Margin" Value="30"/>
         </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource DarkBrush}"/>
+        </Style>
+
         <Style TargetType="ListView">
             <Setter Property="Background" Value="{StaticResource MainBackBrush}"/>
         </Style>
-        
+
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource LightBackBrush}"/>
+        </Style>
+
         <Style TargetType="Border">
             <Setter Property="CornerRadius" Value="5"/>
             <Setter Property="BorderThickness" Value="1"/>

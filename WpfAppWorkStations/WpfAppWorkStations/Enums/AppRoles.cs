@@ -4,7 +4,7 @@
     {
         None = 0,
         Master,
-        Buchgalter,
+        Accountant,
         SysAdmin,
         Director
 
