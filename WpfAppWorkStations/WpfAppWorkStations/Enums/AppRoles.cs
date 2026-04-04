@@ -3,10 +3,10 @@
     public enum AppRoles
     {
         None = 0,
-        Master,
-        Accountant,
-        SysAdmin,
-        Director
+        Мастер,
+        Бухгалтер,
+        СистемныйАдминистратор,
+        Директор
 
     }
 }

@@ -24,5 +24,7 @@ namespace WpfAppWorkStations.Views
         {
             InitializeComponent();
         }
+
+        
     }
 }
