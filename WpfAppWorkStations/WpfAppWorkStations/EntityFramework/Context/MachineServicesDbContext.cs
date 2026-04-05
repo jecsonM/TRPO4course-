@@ -229,23 +229,22 @@ public partial class MachineServicesDbContext : DbContext
 
         modelBuilder.Entity<Relevantrequeststate>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("relevantrequeststates", "MachineServiceDBScheme");
+            entity.HasKey(e => e.RelevantRequestStateId).HasName("relevantrequeststates_pkey");
+
+            entity.ToTable("relevantrequeststates", "MachineServiceDBScheme");
 
             entity.Property(e => e.RelevantRequestStateId)
-                .ValueGeneratedOnAdd()
                 .UseIdentityAlwaysColumn()
                 .HasColumnName("relevant_request_state_id");
             entity.Property(e => e.RequestId).HasColumnName("request_id");
             entity.Property(e => e.RequestStateId).HasColumnName("request_state_id");
             entity.Property(e => e.SetDate).HasColumnName("set_date");
 
-            entity.HasOne(d => d.Request).WithMany()
+            entity.HasOne(d => d.Request).WithMany(p => p.Relevantrequeststates)
                 .HasForeignKey(d => d.RequestId)
                 .HasConstraintName("fk_relevantrequeststates_requests");
 
-            entity.HasOne(d => d.RequestState).WithMany()
+            entity.HasOne(d => d.RequestState).WithMany(p => p.Relevantrequeststates)
                 .HasForeignKey(d => d.RequestStateId)
                 .HasConstraintName("fk_relevantrequeststates_requeststates");
         });

@@ -7,20 +7,24 @@ using System.Threading.Tasks;
 using WpfAppWorkStations.EntityFramework;
 using WpfAppWorkStations.Interfaces.ViewModels;
 
-namespace WpfAppWorkStations.ViewModels
+namespace WpfAppWorkStations.ViewModels.EFViewModels
 {
-    public partial class RequestViewModel : BaseViewModel, IEFViewModel
+    public partial class ClientViewModel : BaseViewModel, IEFViewModel
     {
         [ObservableProperty]
         private bool isChanged;
 
         [ObservableProperty]
-        private Request request;
+        private Client client;
 
-        public RequestViewModel(Request request)
+        public ClientViewModel(Client client)
         {
-            this.request = request;
-            isChanged = false;
+            this.client = client;
+        }
+
+        public override string ToString()
+        {
+            return client?.CompanyName ?? "";
         }
     }
 }

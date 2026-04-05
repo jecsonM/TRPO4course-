@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using WpfAppWorkStations.Interfaces.Services;
 using WpfAppWorkStations.Interfaces.ViewModels;
 using WpfAppWorkStations.Stores;
+
 using WpfAppWorkStations.ViewModels.Pages;
 
 namespace WpfAppWorkStations.Services
@@ -20,7 +21,8 @@ namespace WpfAppWorkStations.Services
             services
                 .AddSingleton<MainWindowViewModel>()
                 .AddSingleton<AuthorizationViewModel>()
-                .AddSingleton<ActivitySelectionViewModel>();
+                .AddSingleton<ActivitySelectionViewModel>()
+                .AddSingleton<RequestsViewModel>();
 
             //Services
             services

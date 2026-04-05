@@ -20,4 +20,6 @@ public partial class Request
     public virtual Staff? Master { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+    public virtual ICollection<Relevantrequeststate> Relevantrequeststates { get; set; } = new List<Relevantrequeststate>();
 }

@@ -15,9 +15,14 @@ namespace WpfAppWorkStations.Interfaces.Services
         public Role GetRoleByStaffID(int id);
 
         public List<Request> GetRequests(
-            bool includeCliens = true,
-            bool showUnasigned = true, 
-            int mastersId = 0 );
+            bool includeClients = true,
+            bool includeMasters = true,
+            bool showUnassigned = true, 
+            int masterId = 0 );
+
+        public List<Client> GetClients();
+        public List<Relevantrequeststate> GetRelevantrequests(Request request);
+        public List<Requeststate> GetRequeststates();
 
         public void AddOrEditRequest(Request request);
     }
