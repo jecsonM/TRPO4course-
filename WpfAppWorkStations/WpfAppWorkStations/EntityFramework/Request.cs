@@ -13,7 +13,11 @@ public partial class Request
 
     public string ServiceAddress { get; set; } = null!;
 
+    public int? MasterId { get; set; }
+
     public virtual Client Client { get; set; } = null!;
+
+    public virtual Staff? Master { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppWorkStations.EntityFramework;
+using WpfAppWorkStations.Services;
+using WpfAppWorkStations.ViewModels.Pages;
 
 namespace WpfAppWorkStations.Views
 {
@@ -25,6 +28,21 @@ namespace WpfAppWorkStations.Views
             InitializeComponent();
         }
 
-        
+        private async void PasswordBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                ButtonAuthorize_Click(sender, null);
+            }
+        }
+
+        private async void ButtonAuthorize_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+
+            AuthorizationViewModel authorizationViewModel = DataContext as AuthorizationViewModel;
+            await authorizationViewModel.Authorize(LoginBox.Text, PasswordBox.Password);
+        }
     }
 }

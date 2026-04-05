@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using WpfAppWorkStations.Interfaces.Services;
 using WpfAppWorkStations.Interfaces.ViewModels;
 using WpfAppWorkStations.Stores;
 using WpfAppWorkStations.ViewModels.Pages;
@@ -17,37 +18,44 @@ namespace WpfAppWorkStations.Services
         {
             //Pages ViewModels
             services
-                .AddSingleton<MainWindowViewModel>();
+                .AddSingleton<MainWindowViewModel>()
+                .AddSingleton<AuthorizationViewModel>()
+                .AddSingleton<ActivitySelectionViewModel>();
 
-            //ViewModels
+            //Services
+            services
+                .AddSingleton<IDBWorkStationsService, DBWorkStationsService>()
+                .AddSingleton<IPasswordService, PasswordService>()
+                .AddSingleton<IAuthorizationService, AuthorizationService>();
 
+            //Stores
+            services
+                .AddSingleton<NavigationStore>();
 
             //Views
             services
                 .AddSingleton<MainWindow>();
 
+            ServiceProvider serviceProvider = services.BuildServiceProvider();
 
-            return services.BuildServiceProvider();
+            serviceProvider
+                .ConfigureAllPagesForNavigationStore();
+
+            return serviceProvider;
         }
 
-        public static ServiceCollection ConfigureAllPagesForNavigationStore(
-            this ServiceCollection serviceCollection, IServiceProvider serviceProvider)
+        public static void ConfigureAllPagesForNavigationStore(this ServiceProvider serviceProvider)
         {
-            serviceCollection
-                .AddSingleton<NavigationStore>(
-                sp =>
-                new NavigationStore(
-                    Assembly.GetExecutingAssembly()
+            NavigationStore navigationStore = serviceProvider.GetRequiredService<NavigationStore>();
+            navigationStore.AllPageViewModels = 
+                Assembly.GetExecutingAssembly()
                     .GetTypes()
-                    .Where(t => t.IsInterface && typeof(IPageViewModel).IsAssignableFrom(t) && t != typeof(IPageViewModel))
+                    .Where(t => typeof(IPageViewModel).IsAssignableFrom(t) && t != typeof(IPageViewModel))
                     .Select(
                         t => new KeyValuePair<Type, IPageViewModel>(t, serviceProvider.GetRequiredService(t) as IPageViewModel)
                     )
-                    .ToDictionary()
-                )
-                )
-                ;
-            return serviceCollection;
+                    .ToDictionary();
+            navigationStore.NavigateTo<AuthorizationViewModel>();
         }
     }
 

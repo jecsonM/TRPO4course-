@@ -17,16 +17,14 @@ namespace WpfAppWorkStations.Services
         
         private ClaimsPrincipal _currentUser;
         private IPasswordService _passwordService;
-        private NavigationStore _navigationStore;
+        
         private IDBWorkStationsService _dbWorkStationsService;
 
         public AuthorizationService(
             IPasswordService passwordService, 
-            NavigationStore navigationStore,
             IDBWorkStationsService dbWorkStationsService)
         {
             _passwordService = passwordService;
-            _navigationStore = navigationStore;
             _dbWorkStationsService = dbWorkStationsService;
             _currentUser = new ClaimsPrincipal(new ClaimsIdentity());
         }
@@ -39,14 +37,34 @@ namespace WpfAppWorkStations.Services
         
         public bool CanCurrentUserAcces<TPageViewModel>(TPageViewModel pageViewModel) where TPageViewModel : IPageViewModel
         {
-            throw new NotImplementedException();
+            if (pageViewModel.AllowedRoles.Contains(AppRoles.None))
+                return true;
+
+            if (CurrentUser.Identity.IsAuthenticated
+                && pageViewModel.AllowedRoles.Contains(AppRoles.Authorized))
+                return true;
+
+            string RoleID = CurrentUser.FindFirst("AppRoleId")?.Value;
+            int RoleNumber;
+            if (RoleID != null && int.TryParse(RoleID, out RoleNumber))
+            {
+                AppRoles appRole = (AppRoles)RoleNumber;
+                if (appRole == AppRoles.Директор)
+                    return true;
+
+                return pageViewModel.AllowedRoles.Contains(appRole);
+            }
+
+            return false;
         }
 
         public async Task<bool> LoginAsync(string login, string password)
         {
             
             Staff user = _dbWorkStationsService.GetStaffByLogin(login);
-            if (user == null || !_passwordService.ValidatePassword(password, user.PasswordHash ?? new byte[4]))
+            if (user == null 
+                || 
+                !_passwordService.ValidatePassword(password, user.PasswordHash))
                 return false;
 
 

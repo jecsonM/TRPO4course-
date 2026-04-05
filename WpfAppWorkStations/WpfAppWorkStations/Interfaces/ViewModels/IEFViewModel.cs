@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WpfAppWorkStations.Enums;
 
 namespace WpfAppWorkStations.Interfaces.ViewModels
 {
-    public interface IPageViewModel
+    public interface IEFViewModel
     {
-        public AppRoles[] AllowedRoles { get; }
-        public string Title { get; }
+        public bool IsChanged { get; set; }
     }
 }

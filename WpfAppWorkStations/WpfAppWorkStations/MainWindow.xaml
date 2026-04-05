@@ -14,6 +14,9 @@
             <DataTemplate DataType="{x:Type vm:AuthorizationViewModel }">
                 <views:AuthorizationView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ActivitySelectionViewModel }">
+                <views:ActivitySelectionView/>
+            </DataTemplate>
         </Grid.Resources>
         <ContentControl Content="{Binding CurrentViewModel}"/>
     </Grid>

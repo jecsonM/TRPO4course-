@@ -26,7 +26,7 @@
                 <StackPanel>
                     <TextBlock Text="Авторизация"  FontSize="28" HorizontalAlignment="Center" Margin="0 0 0 30"/>
                     <TextBlock >Логин</TextBlock>
-                    <TextBox Text="2" BorderBrush="Transparent" Margin="0 0 0 30"></TextBox>
+                    <TextBox Name="LoginBox" BorderBrush="Transparent" Margin="0 0 0 30"></TextBox>
                     <TextBlock>Пароль</TextBlock>
                     <PasswordBox 
                         Name="PasswordBox" 
@@ -34,9 +34,9 @@
                         BorderBrush="Transparent" 
                         Background="{StaticResource LightBackBrush}" 
                         Margin="0 0 0 30"
-                        
+                        PreviewKeyDown="PasswordBox_PreviewKeyDown"
                         ></PasswordBox>
-                    <Button Content="Вход" Margin="0 0 0 30"/>
+                    <Button Content="Вход" Margin="0 0 0 30" Click="ButtonAuthorize_Click"/>
                 </StackPanel>
             </Grid>
         </Border>

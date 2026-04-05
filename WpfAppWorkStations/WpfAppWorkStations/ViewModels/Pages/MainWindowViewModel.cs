@@ -4,20 +4,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfAppWorkStations.Enums;
 using WpfAppWorkStations.Interfaces.ViewModels;
+using WpfAppWorkStations.Stores;
 
 namespace WpfAppWorkStations.ViewModels.Pages
 {
-    public partial class MainWindowViewModel : BaseViewModel, IPageViewModel
+    public partial class MainWindowViewModel : BaseViewModel
     {
-        [ObservableProperty]
-        private IPageViewModel currentViewModel;
+        public IPageViewModel CurrentViewModel => _navigationStore.CurrentViewModel;
+        private NavigationStore _navigationStore;
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(NavigationStore navigationStore)
         {
-            this.currentViewModel = new AuthorizationViewModel();
+            _navigationStore = navigationStore;
+            _navigationStore.CurrentViewModelChanged += () => OnPropertyChanged(nameof(CurrentViewModel));
         }
 
-        public string Title { get => "Главное окно"; }
+        
+        
+
     }
 }
