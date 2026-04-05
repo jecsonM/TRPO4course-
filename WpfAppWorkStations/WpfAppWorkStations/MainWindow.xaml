@@ -10,18 +10,40 @@
         Title="MainWindow" Height="500" Width="800"
         Background="{StaticResource LightBackBrush}">
     <Grid>
-        <Grid.Resources>
-            <DataTemplate DataType="{x:Type vm:AuthorizationViewModel }">
-                <views:AuthorizationView/>
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type vm:ActivitySelectionViewModel }">
-                <views:ActivitySelectionView/>
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type vm:RequestsViewModel }">
-                <views:RequestsViewModel/>
-            </DataTemplate>
-        </Grid.Resources>
-        <ContentControl Content="{Binding CurrentViewModel}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Visibility="{Binding NavPanelVisibility}">
+            <Button 
+                Content="{Binding MainMenu.PageViewModel.Title}"
+                Command="{Binding MainMenu}"
+                Margin="5"
+                Padding="10,5"
+                HorizontalAlignment="Stretch"/>
+            <TextBlock Text="{Binding CurrentUserDisplay}" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.Resources>
+                <DataTemplate DataType="{x:Type vm:AuthorizationViewModel }">
+                    <views:AuthorizationView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:ActivitySelectionViewModel }">
+                    <views:ActivitySelectionView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:RequestsViewModel }">
+                    <views:RequestsView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:OrdersViewModel }">
+                    <views:OrdersView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:MachinesViewModel }">
+                    <views:MachinesView/>
+                </DataTemplate>
+            </Grid.Resources>
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+        </Grid>
     </Grid>
+    
     
 </Window>

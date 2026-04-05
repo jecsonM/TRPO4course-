@@ -18,6 +18,172 @@ namespace WpfAppWorkStations.Services
             }
         }
 
+        public void AddOrEditOrder(Order order)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                if (order.OrderId == 0)
+                {
+                    // НОВЫЙ ЗАКАЗ
+
+                    // Обрабатываем связанную заявку
+                    if (order.Request != null)
+                    {
+                        if (order.Request.RequestId > 0)
+                        {
+                            dbContext.Requests.Attach(order.Request);
+                            dbContext.Entry(order.Request).State = EntityState.Unchanged;
+                            order.RequestId = order.Request.RequestId;
+                        }
+                        else
+                        {
+                            order.RequestId = 0;
+                        }
+                    }
+                    else if (order.RequestId > 0)
+                    {
+                        var request = dbContext.Requests.Find(order.RequestId);
+                        if (request != null)
+                        {
+                            order.Request = request;
+                        }
+                    }
+
+                    // Обрабатываем оборудование
+                    if (order.Machines != null && order.Machines.Any())
+                    {
+                        foreach (var machine in order.Machines)
+                        {
+                            if (machine.MachineId > 0)
+                            {
+                                dbContext.Machines.Attach(machine);
+                                dbContext.Entry(machine).State = EntityState.Unchanged;
+                            }
+                        }
+                    }
+
+                    // Обрабатываем услуги
+                    if (order.Serviceprovisions != null && order.Serviceprovisions.Any())
+                    {
+                        foreach (var serviceProvision in order.Serviceprovisions)
+                        {
+                            if (serviceProvision.ServiceId > 0)
+                            {
+                                dbContext.Machineservices.Attach(serviceProvision.Service);
+                                dbContext.Entry(serviceProvision.Service).State = EntityState.Unchanged;
+                            }
+                        }
+                    }
+
+                    dbContext.Orders.Add(order);
+                    dbContext.SaveChanges();
+
+                    
+                    Relevantorderstate relevantOrderState = new Relevantorderstate()
+                    {
+                        OrderId = order.OrderId,
+                        OrderStateId = dbContext.Orderstates
+                            .First(os => os.OrderStateName == "Сформирован")
+                            .OrderStateId,
+                        SetDate = DateTime.UtcNow
+                    };
+                    dbContext.Relevantorderstates.Add(relevantOrderState);
+                }
+                else
+                {
+                    
+                    var existingOrder = dbContext.Orders
+                        .Include(o => o.Request)
+                        .Include(o => o.Machines)
+                        .Include(o => o.Serviceprovisions)
+                        .FirstOrDefault(o => o.OrderId == order.OrderId);
+
+                    if (existingOrder == null)
+                    {
+                        throw new ArgumentException($"Заказ с ID {order.OrderId} не найден");
+                    }
+
+                    
+                    existingOrder.CreationDate = order.CreationDate;
+
+                    
+                    if (order.Request != null)
+                    {
+                        if (order.Request.RequestId == 0)
+                        {
+                            existingOrder.Request = order.Request;
+                            existingOrder.RequestId = 0;
+                        }
+                        else if (order.Request.RequestId != existingOrder.RequestId)
+                        {
+                            var request = dbContext.Requests.Find(order.Request.RequestId);
+                            if (request != null)
+                            {
+                                existingOrder.Request = request;
+                                existingOrder.RequestId = request.RequestId;
+                            }
+                        }
+                    }
+                    else if (order.RequestId > 0 && order.RequestId != existingOrder.RequestId)
+                    {
+                        var request = dbContext.Requests.Find(order.RequestId);
+                        if (request != null)
+                        {
+                            existingOrder.Request = request;
+                            existingOrder.RequestId = request.RequestId;
+                        }
+                    }
+
+                    
+                    if (order.Machines != null)
+                    {
+                        existingOrder.Machines.Clear();
+                        foreach (var machine in order.Machines)
+                        {
+                            if (machine.MachineId > 0)
+                            {
+                                var attachedMachine = dbContext.Machines.Find(machine.MachineId);
+                                if (attachedMachine != null)
+                                {
+                                    existingOrder.Machines.Add(attachedMachine);
+                                }
+                            }
+                            else
+                            {
+                                existingOrder.Machines.Add(machine);
+                            }
+                        }
+                    }
+
+                    // Обновляем услуги
+                    if (order.Serviceprovisions != null)
+                    {
+                        existingOrder.Serviceprovisions.Clear();
+                        foreach (var serviceProvision in order.Serviceprovisions)
+                        {
+                            if (serviceProvision.ServiceId > 0)
+                            {
+                                var attachedService = dbContext.Machineservices.Find(serviceProvision.ServiceId);
+                                if (attachedService != null)
+                                {
+                                    serviceProvision.Service = attachedService;
+                                    existingOrder.Serviceprovisions.Add(serviceProvision);
+                                }
+                            }
+                            else
+                            {
+                                existingOrder.Serviceprovisions.Add(serviceProvision);
+                            }
+                        }
+                    }
+
+                    dbContext.Entry(existingOrder).State = EntityState.Modified;
+                }
+
+                dbContext.SaveChanges();
+            }
+        }
+
         public void AddOrEditRequest(Request request)
         {
             using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
@@ -53,6 +219,19 @@ namespace WpfAppWorkStations.Services
                     }
 
                     dbContext.Requests.Add(request);
+
+                    dbContext.SaveChanges();
+
+                    Relevantrequeststate relevantrequeststate = 
+                        new Relevantrequeststate() { 
+                            RequestId = request.RequestId, 
+                            RequestStateId = dbContext.Requeststates
+                            .First(rs => rs.RequestStateName == "Создана")
+                            .RequestStateId,
+                            SetDate = DateTime.UtcNow
+                        };
+                    dbContext.Relevantrequeststates.Add(relevantrequeststate);
+
                 }
                 else
                 {
@@ -113,6 +292,38 @@ namespace WpfAppWorkStations.Services
             }
         }
 
+        public void AddRelevantOrderState(Relevantorderstate relevantOrderState)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                var newState = new Relevantorderstate
+                {
+                    OrderId = relevantOrderState.OrderId,
+                    OrderStateId = relevantOrderState.OrderStateId,
+                    SetDate = relevantOrderState.SetDate == default ? DateTime.UtcNow : relevantOrderState.SetDate
+                };
+
+                dbContext.Relevantorderstates.Add(newState);
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void AddRelevantRequestState(Relevantrequeststate relevantrequeststate)
+        {
+            using (MachineServicesDbContext dbContext
+                = new MachineServicesDbContext())
+            {
+                var newState = new Relevantrequeststate
+                {
+                    RequestId = relevantrequeststate.RequestId,
+                    RequestStateId = relevantrequeststate.RequestStateId,
+                    SetDate = relevantrequeststate.SetDate
+                };
+
+                dbContext.Relevantrequeststates.Add(newState);
+                dbContext.SaveChanges();
+            }
+        }
 
         public List<Client> GetClients()
         {
@@ -120,6 +331,41 @@ namespace WpfAppWorkStations.Services
                 = new MachineServicesDbContext())
             {
                 return dbContext.Clients.ToList();
+            }
+        }
+
+        public List<Order> GetOrders()
+        {
+            using (MachineServicesDbContext dbContext
+                = new MachineServicesDbContext())
+            {
+                return dbContext.Orders
+                    .Include(o => o.Request)
+                    .Include(o => o.Serviceprovisions)
+                    .Include(o => o.Machines)
+                    .ToList();
+            }
+        }
+
+        public List<Orderstate> GetOrderstates()
+        {
+            using (MachineServicesDbContext dbContext
+                = new MachineServicesDbContext())
+            {
+                return dbContext.Orderstates.ToList();
+            }
+        }
+
+        public List<Relevantorderstate> GetRelevantorderstates(Order order)
+        {
+            using (MachineServicesDbContext dbContext
+                 = new MachineServicesDbContext())
+            {
+                return dbContext.Relevantorderstates
+                    .Include(ros => ros.OrderState)
+                    .Where(ros => ros.OrderId == order.OrderId)
+                    .OrderByDescending(ros => ros.SetDate)
+                    .ToList();
             }
         }
 
@@ -133,6 +379,28 @@ namespace WpfAppWorkStations.Services
                     .Where(rqs => rqs.RequestId == request.RequestId)
                     .OrderByDescending(rqs => rqs.SetDate) 
                     .ToList();
+            }
+        }
+        public void DeleteMachine(int machineId)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                var machine = dbContext.Machines.Find(machineId);
+
+                if (machine == null)
+                {
+                    throw new ArgumentException($"Оборудование с ID {machineId} не найдено");
+                }
+
+                // Проверяем, есть ли связанные заказы
+                var hasOrders = dbContext.Orders.Any(o => o.Machines.Any(m => m.MachineId == machineId));
+                if (hasOrders)
+                {
+                    throw new InvalidOperationException("Нельзя удалить оборудование, так как оно используется в заказах");
+                }
+
+                dbContext.Machines.Remove(machine);
+                dbContext.SaveChanges();
             }
         }
 
@@ -162,7 +430,11 @@ namespace WpfAppWorkStations.Services
 
         public List<Requeststate> GetRequeststates()
         {
-            throw new NotImplementedException();
+            using (MachineServicesDbContext dbContext
+                 = new MachineServicesDbContext())
+            {
+                return dbContext.Requeststates.ToList();
+            }
         }
 
         public Role GetRoleByStaffID(int id)
@@ -192,6 +464,81 @@ namespace WpfAppWorkStations.Services
                 = new MachineServicesDbContext())
             {
                 return dbContext.Staff.FirstOrDefault(s => s.Login == login);
+            }
+        }
+
+        public List<Machine> GetMachines()
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                return dbContext.Machines
+                    .Include(m => m.Client)
+                    .ToList();
+            }
+        }
+
+        public void AddOrEditMachine(Machine machine)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                if (machine.MachineId == 0)
+                {
+                    if (machine.Client != null && machine.Client.ClientId > 0)
+                    {
+                        dbContext.Clients.Attach(machine.Client);
+                        dbContext.Entry(machine.Client).State = EntityState.Unchanged;
+                        machine.ClientId = machine.Client.ClientId;
+                        machine.Client = null;
+                    }
+                    else if (machine.ClientId > 0)
+                    {
+                        var client = dbContext.Clients.Find(machine.ClientId);
+                        if (client != null)
+                        {
+                            machine.Client = client;
+                        }
+                    }
+
+                    dbContext.Machines.Add(machine);
+                }
+                else
+                {
+                    var existingMachine = dbContext.Machines.Find(machine.MachineId);
+
+                    if (existingMachine == null)
+                    {
+                        throw new ArgumentException($"Оборудование с ID {machine.MachineId} не найдено");
+                    }
+
+                    existingMachine.Model = machine.Model;
+                    existingMachine.SerialNumber = machine.SerialNumber;
+                    existingMachine.MastersComment = machine.MastersComment;
+                    existingMachine.ClientId = machine.ClientId;
+
+                    if (machine.Client != null && machine.Client.ClientId != existingMachine.ClientId)
+                    {
+                        var client = dbContext.Clients.Find(machine.Client.ClientId);
+                        if (client != null)
+                        {
+                            existingMachine.Client = client;
+                            existingMachine.ClientId = client.ClientId;
+                        }
+                    }
+
+                    dbContext.Entry(existingMachine).State = EntityState.Modified;
+                }
+
+                dbContext.SaveChanges();
+            }
+        }
+        public List<Machine> GetMachinesByClient(int clientId)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                return dbContext.Machines
+                    .Include(m => m.Client)
+                    .Where(m => m.ClientId == clientId)
+                    .ToList();
             }
         }
     }

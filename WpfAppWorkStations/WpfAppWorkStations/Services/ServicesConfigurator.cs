@@ -22,7 +22,9 @@ namespace WpfAppWorkStations.Services
                 .AddSingleton<MainWindowViewModel>()
                 .AddSingleton<AuthorizationViewModel>()
                 .AddSingleton<ActivitySelectionViewModel>()
-                .AddSingleton<RequestsViewModel>();
+                .AddSingleton<RequestsViewModel>()
+                .AddSingleton<OrdersViewModel>()
+                .AddSingleton<MachinesViewModel>();
 
             //Services
             services

@@ -46,7 +46,9 @@ namespace WpfAppWorkStations.ViewModels.Pages
                     _navigationStore
                     .AllPageViewModels
                     .Values
-                    .Where(p => _authorizationService.CanCurrentUserAcces(p)))
+                    .Where(p => _authorizationService.CanCurrentUserAcces(p))
+                    .Where(p => p.GetType() != typeof(ActivitySelectionViewModel)))
+                    
                 {
                     _buttonsForPageViews
                         .Add(new ButtonsForPageViewModels(_navigationStore, page));

@@ -27,6 +27,14 @@ namespace WpfAppWorkStations.ViewModels.Pages
             _clientViewModels = new ObservableCollection<ClientViewModel>();
             _relevantRequestStates = new ObservableCollection<RelevantRequestStateViewModel>();
 
+            _requestStates = new ObservableCollection<RequestStateViewModel>();
+            List<Requeststate> requestStates = _DBworkStationsService.GetRequeststates();
+            foreach (var requeststate in requestStates)
+            {
+                RequestStates.Add(new RequestStateViewModel(requeststate));
+            }
+
+
             if (_authorizationService != null)
             {
                 _authorizationService.UserChanged += (cp) => FullRefresh();
@@ -80,8 +88,11 @@ namespace WpfAppWorkStations.ViewModels.Pages
         public ObservableCollection<RelevantRequestStateViewModel> RelevantRequestStates
             => _relevantRequestStates;
 
+        private ObservableCollection<RequestStateViewModel> _requestStates;
+        public ObservableCollection<RequestStateViewModel > RequestStates => _requestStates;
 
-        
+        [ObservableProperty]
+        private RequestStateViewModel currentlySelectedRequestState;
 
         private RequestViewModel currentlySelectedRequest;
         public RequestViewModel CurrentlySelectedRequest
@@ -109,6 +120,24 @@ namespace WpfAppWorkStations.ViewModels.Pages
 
                 OnPropertyChanged(nameof(CurrentlySelectedRequest));
                 OnPropertyChanged(nameof(CurrentlySelectedClient));
+            }
+        }
+
+        [RelayCommand]
+        private void AddRequestState()
+        {
+            if (CurrentlySelectedClient != null && CurrentlySelectedRequestState != null)
+            {
+                Relevantrequeststate relevantrequeststate
+                    = new Relevantrequeststate()
+                    {
+                        RequestId = CurrentlySelectedRequest.Request.RequestId,
+                        RequestStateId = CurrentlySelectedRequestState.Requeststate.RequestStateId,
+                        SetDate = DateTime.UtcNow,
+                        RequestState = CurrentlySelectedRequestState.Requeststate
+                    };
+                _DBworkStationsService.AddRelevantRequestState(relevantrequeststate);
+                RelevantRequestStates.Add(new RelevantRequestStateViewModel(relevantrequeststate));
             }
         }
 

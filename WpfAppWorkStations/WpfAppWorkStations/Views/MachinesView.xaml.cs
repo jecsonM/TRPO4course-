@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfAppWorkStations.Views
 {
     /// <summary>
-    /// Interaction logic for RequestsViewModel.xaml
+    /// Interaction logic for MachinesView.xaml
     /// </summary>
-    public partial class RequestsView : UserControl
+    public partial class MachinesView : UserControl
     {
-        public RequestsView()
+        public MachinesView()
         {
             InitializeComponent();
         }

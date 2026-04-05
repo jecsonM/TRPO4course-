@@ -23,7 +23,19 @@ namespace WpfAppWorkStations.Interfaces.Services
         public List<Client> GetClients();
         public List<Relevantrequeststate> GetRelevantrequests(Request request);
         public List<Requeststate> GetRequeststates();
-
+        public void AddRelevantRequestState(Relevantrequeststate relevantrequeststate);
         public void AddOrEditRequest(Request request);
+
+
+        
+        List<Order> GetOrders();
+        List<Orderstate> GetOrderstates();
+        List<Relevantorderstate> GetRelevantorderstates(Order order);
+        void AddRelevantOrderState(Relevantorderstate relevantOrderState);
+        void AddOrEditOrder(Order order);
+        List<Machine> GetMachines();
+        void AddOrEditMachine(Machine machine);
+        void DeleteMachine(int machineId);
+        List<Machine> GetMachinesByClient(int clientId);
     }
 }
