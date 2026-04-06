@@ -189,13 +189,11 @@
 
                                                         <TextBlock Grid.Column="1" 
                                                                    Text="{Binding FormattedPrice}"
-                                                                   FontSize="13"
                                                                    FontWeight="Bold"
                                                                    Margin="10,0,0,0"/>
 
                                                         <TextBlock Grid.Column="2" 
                                                                    Text="{Binding CreatorName}"
-                                                                   FontSize="10"
                                                                    Foreground="Gray"
                                                                    Margin="10,0,0,0"/>
                                                     </Grid>

@@ -25,7 +25,9 @@ namespace WpfAppWorkStations.Services
                 .AddSingleton<RequestsViewModel>()
                 .AddSingleton<OrdersViewModel>()
                 .AddSingleton<MachinesViewModel>()
-                .AddSingleton<ServicesViewModel>();
+                .AddSingleton<ServicesViewModel>()
+                .AddSingleton<StatisticsViewModel>()
+                .AddSingleton<UsersViewModel>();
 
             //Services
             services

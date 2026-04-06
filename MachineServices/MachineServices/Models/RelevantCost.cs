@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace MachineServices.Models;
 
-public partial class RelevantCost
+public partial class Relevantcost
 {
-    public int RelevantCostId { get; set; }
+    public int Relevantcostid { get; set; }
 
     public int ServiceId { get; set; }
 
@@ -13,9 +13,9 @@ public partial class RelevantCost
 
     public decimal RelevantCost1 { get; set; }
 
-    public DateTimeOffset SetDate { get; set; }
+    public DateTime SetDate { get; set; }
 
     public virtual Staff Creators { get; set; } = null!;
 
-    public virtual MachineService Service { get; set; } = null!;
+    public virtual Machineservice Service { get; set; } = null!;
 }

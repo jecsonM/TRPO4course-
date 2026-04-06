@@ -2297,6 +2297,41 @@
           }
         }
       },
+      "Npgsql/8.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
+          "Npgsql": "8.0.6"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NuGet.Common/6.11.0": {
         "type": "package",
         "dependencies": {
@@ -6816,6 +6851,44 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/8.0.6": {
+      "sha512": "KaS6CY5kY2Sd0P00MSeFcOI3t2DiQ4UWG8AuRpVOUeDWITOKfoEEG91DP3cmT6aerixPkjwKgXxnpDxIkDpO6g==",
+      "type": "package",
+      "path": "npgsql/8.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.8.0.6.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.11": {
+      "sha512": "leShR/O/nSIS3Jpj8yUBmkzaXzBbtlV326+MYkX2BwAj2qSNrUv/H6m8G9Hnv2zUkQYccTpmV5jIVq5vdciEUA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/8.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "NuGet.Common/6.11.0": {
       "sha512": "T3bCiKUSx8wdYpcqr6Dbx93zAqFp689ee/oa1tH22XI/xl7EUzQ7No/WlE1FUqvEX1+Mqar3wRNAn2O/yxo94g==",
       "type": "package",
@@ -8267,27 +8340,28 @@
       "Microsoft.EntityFrameworkCore.InMemory >= 8.0.23",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.23",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.23",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.23"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.23",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\222909071097-11\\.nuget\\packages\\": {},
+    "C:\\Users\\Евгений\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\MachineServices.csproj",
+      "projectUniqueName": "F:\\Pictures\\мои док(и)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\MachineServices.csproj",
       "projectName": "MachineServices",
-      "projectPath": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\MachineServices.csproj",
-      "packagesPath": "C:\\Users\\222909071097-11\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\222909071097-11\\Downloads\\TRPO4course-\\MachineServices\\MachineServices\\obj\\",
+      "projectPath": "F:\\Pictures\\мои док(и)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\MachineServices.csproj",
+      "packagesPath": "C:\\Users\\Евгений\\.nuget\\packages\\",
+      "outputPath": "F:\\Pictures\\мои док(и)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\222909071097-11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Евгений\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8296,6 +8370,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8313,8 +8388,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -8345,6 +8419,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.23, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[8.0.11, )"
           }
         },
         "imports": [
@@ -8366,7 +8444,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

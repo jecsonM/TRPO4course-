@@ -43,6 +43,12 @@
                 <DataTemplate DataType="{x:Type vm:ServicesViewModel}">
                     <views:ServicesView/>
                 </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:UsersViewModel}">
+                    <views:UsersView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vm:StatisticsViewModel}">
+                    <views:StatisticsView/>
+                </DataTemplate>
             </Grid.Resources>
             <ContentControl Content="{Binding CurrentViewModel}"/>
         </Grid>

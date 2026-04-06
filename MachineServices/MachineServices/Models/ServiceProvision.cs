@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MachineServices.Models;
 
-public partial class ServiceProvision
+public partial class Serviceprovision
 {
     public int OrderId { get; set; }
 
@@ -17,5 +17,5 @@ public partial class ServiceProvision
 
     public virtual Order Order { get; set; } = null!;
 
-    public virtual MachineService Service { get; set; } = null!;
+    public virtual Machineservice Service { get; set; } = null!;
 }

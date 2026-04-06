@@ -292,6 +292,60 @@ namespace WpfAppWorkStations.Services
             }
         }
 
+
+        public decimal GetOrderSummForPeriod(DateTime from, DateTime to)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                DateTime toDate = to.Date.AddDays(1).AddTicks(-1);
+                DateTime fromDate = from.Date;
+
+                // Получаем все завершенные заказы за период
+                List<int> completedOrderIds = dbContext.Relevantorderstates
+                    .Where(ros => ros.OrderState.OrderStateName == "Завершён"
+                                  && ros.SetDate >= fromDate
+                                  && ros.SetDate <= toDate)
+                    .Select(ros => ros.OrderId)
+                    .Distinct()
+                    .ToList();
+
+                decimal totalSum = 0;
+
+                foreach (var orderId in completedOrderIds)
+                {
+                    // Получаем дату завершения конкретного заказа
+                    DateTime completionDate = dbContext.Relevantorderstates
+                        .Where(ros => ros.OrderId == orderId && ros.OrderState.OrderStateName == "Завершён")
+                        .Select(ros => ros.SetDate)
+                        .FirstOrDefault();
+
+                    // Получаем все услуги заказа с их актуальными ценами на момент завершения
+                    List<Serviceprovision> orderServices = dbContext.Serviceprovisions
+                        .Include(sp => sp.Service)
+                            .ThenInclude(s => s.Relevantcosts)
+                        .Where(sp => sp.OrderId == orderId)
+                        .ToList();
+
+                    foreach (Serviceprovision serviceProvision in orderServices)
+                    {
+                        Machineservice service = serviceProvision.Service;
+
+                        Relevantcost relevantCost = service.Relevantcosts
+                            .Where(rc => rc.SetDate <= completionDate)
+                            .OrderByDescending(rc => rc.SetDate)
+                            .FirstOrDefault();
+
+                        if (relevantCost != null)
+                        {
+                            totalSum += relevantCost.RelevantCost1 * serviceProvision.Amount;
+                        }
+                    }
+                }
+
+                return totalSum;
+            }
+        }
+
         public void AddRelevantOrderState(Relevantorderstate relevantOrderState)
         {
             using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
@@ -453,10 +507,57 @@ namespace WpfAppWorkStations.Services
 
         public List<Role> GetRoles()
         {
-            using (MachineServicesDbContext dbContext 
-                = new MachineServicesDbContext() )
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
             {
                 return dbContext.Roles.ToList();
+            }
+        }
+
+        public List<Staff> GetStaff()
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                return dbContext.Staff.Include(s=> s.Role).ToList();
+            }
+        }
+        
+
+        public void UpdateStaffPassword(int staffId, byte[] passwordHash)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                var staff = dbContext.Staff.Find(staffId);
+                if (staff != null)
+                {
+                    staff.PasswordHash = passwordHash;
+                    dbContext.SaveChanges();
+                }
+            }
+        }
+
+        public void AddStaff(Staff staff)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                if (staff.Role != null && staff.RoleId > 0)
+                {
+                    dbContext.Roles.Attach(staff.Role);
+                }
+                dbContext.Staff.Add(staff);
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void DeleteStaff(int staffId)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                var staff = dbContext.Staff.Find(staffId);
+                if (staff != null)
+                {
+                    dbContext.Staff.Remove(staff);
+                    dbContext.SaveChanges();
+                }
             }
         }
 

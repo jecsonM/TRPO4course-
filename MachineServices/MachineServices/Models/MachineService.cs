@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MachineServices.Models;
 
-public partial class MachineService
+public partial class Machineservice
 {
     public int ServiceId { get; set; }
 
@@ -13,7 +13,7 @@ public partial class MachineService
 
     public virtual Staff? Creators { get; set; }
 
-    public virtual ICollection<RelevantCost> RelevantCosts { get; set; } = new List<RelevantCost>();
+    public virtual ICollection<Relevantcost> Relevantcosts { get; set; } = new List<Relevantcost>();
 
-    public virtual ICollection<ServiceProvision> ServiceProvisions { get; set; } = new List<ServiceProvision>();
+    public virtual ICollection<Serviceprovision> Serviceprovisions { get; set; } = new List<Serviceprovision>();
 }

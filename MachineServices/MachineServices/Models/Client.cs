@@ -23,6 +23,8 @@ public partial class Client
 
     public string? Notes { get; set; }
 
+    public byte[]? PasswordHash { get; set; }
+
     public virtual ICollection<Machine> Machines { get; set; } = new List<Machine>();
 
     public virtual ICollection<Request> Requests { get; set; } = new List<Request>();

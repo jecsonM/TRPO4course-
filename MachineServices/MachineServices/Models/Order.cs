@@ -9,13 +9,13 @@ public partial class Order
 
     public int RequestId { get; set; }
 
-    public DateTimeOffset CreationDate { get; set; }
+    public DateTime CreationDate { get; set; }
 
-    public virtual ICollection<RelevantOrderState> RelevantOrderStates { get; set; } = new List<RelevantOrderState>();
+    public virtual ICollection<Relevantorderstate> Relevantorderstates { get; set; } = new List<Relevantorderstate>();
 
     public virtual Request Request { get; set; } = null!;
 
-    public virtual ICollection<ServiceProvision> ServiceProvisions { get; set; } = new List<ServiceProvision>();
+    public virtual ICollection<Serviceprovision> Serviceprovisions { get; set; } = new List<Serviceprovision>();
 
     public virtual ICollection<Machine> Machines { get; set; } = new List<Machine>();
 }

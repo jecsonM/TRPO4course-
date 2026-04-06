@@ -10,9 +10,12 @@ namespace WpfAppWorkStations.Interfaces.Services
     public interface IDBWorkStationsService
     {
         public List<Role> GetRoles();
+        public List<Staff> GetStaff(); 
         public void AddNewUser(Staff userToAdd);
         public Staff GetStaffByLogin(string login);
         public Role GetRoleByStaffID(int id);
+
+        public decimal GetOrderSummForPeriod(DateTime from, DateTime to);
 
         public List<Request> GetRequests(
             bool includeClients = true,
@@ -46,6 +49,11 @@ namespace WpfAppWorkStations.Interfaces.Services
         void AddRelevantCost(Relevantcost relevantCost);
         void DeleteService(int serviceId);
 
+
+        
+        void UpdateStaffPassword(int staffId, byte[] passwordHash);
+        void AddStaff(Staff staff);
+        void DeleteStaff(int staffId);
 
     }
 }

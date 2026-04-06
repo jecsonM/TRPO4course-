@@ -18,7 +18,7 @@ namespace MachineServices
             builder.Services.AddControllersWithViews();
 
 
-            builder.Services.AddDbContext<MyDbContext>(options =>
+            builder.Services.AddDbContext<MachineServicesDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
             

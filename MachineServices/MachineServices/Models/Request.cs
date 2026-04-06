@@ -9,13 +9,17 @@ public partial class Request
 
     public int ClientId { get; set; }
 
-    public DateTimeOffset CreationDate { get; set; }
+    public DateTime CreationDate { get; set; }
 
     public string ServiceAddress { get; set; } = null!;
 
+    public int? MasterId { get; set; }
+
     public virtual Client Client { get; set; } = null!;
+
+    public virtual Staff? Master { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    public virtual ICollection<RelevantRequestState> RelevantRequestStates { get; set; } = new List<RelevantRequestState>();
+    public virtual ICollection<Relevantrequeststate> Relevantrequeststates { get; set; } = new List<Relevantrequeststate>();
 }

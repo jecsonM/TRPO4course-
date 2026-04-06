@@ -14,10 +14,10 @@ namespace MachineServices.Controllers
     public class AccountController : Controller
     {
 
-        private readonly MyDbContext _context;
+        private readonly MachineServicesDbContext _context;
         private readonly IPasswordService _passwordService;
 
-        public AccountController(MyDbContext context, IPasswordService passwordService)
+        public AccountController(MachineServicesDbContext context, IPasswordService passwordService)
         {
             _context = context;
             _passwordService = passwordService;

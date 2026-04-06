@@ -1,5 +1,9 @@
 Scaffold-DbContext "Host=localhost;Port=5432;Database=MachineServicesDB;Username=MachineServiceUser;Password=MachineServiceUserMaster;SSL Mode=Prefer;" Npgsql.EntityFrameworkCore.PostgreSQL -schemas "MachineServiceDBScheme" -outputDir EntityFramework -ContextDir EntityFramework/Context -Force
 
+
+Scaffold-DbContext "Host=localhost;Port=5432;Database=MachineServicesDB;Username=MachineServiceUser;Password=MachineServiceUserMaster;SSL Mode=Prefer;" Npgsql.EntityFrameworkCore.PostgreSQL -schemas "MachineServiceDBScheme" -outputDir Models -ContextDir Models -Force
+
+
 host=localhost port=5432 dbname=FamilyRestarauntDB user=FamilyRestarauntAdmin password=FamilyRestarauntMaster
 
 Server=localhost;Port=5432;User Id=FamilyRestarauntAdmin;Password=FamilyRestarauntMaster;Database=FamilyRestarauntDB;

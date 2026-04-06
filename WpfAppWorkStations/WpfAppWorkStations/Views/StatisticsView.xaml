@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="WpfAppWorkStations.Views.StatisticsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="600">
+
+    <Grid>
+        <Border Padding="30" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{StaticResource MainBackBrush}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Заголовок -->
+                <TextBlock Grid.Row="0" 
+                           Text="Статистика приходов" 
+                           FontSize="24" 
+                           FontWeight="Bold" 
+                           Margin="0,0,0,30"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Выбор периода -->
+                <Border Grid.Row="1" 
+                        BorderBrush="#E0E0E0" 
+                        BorderThickness="1" 
+                        CornerRadius="8" 
+                        Padding="20">
+                    <StackPanel>
+                        <TextBlock Text="Выберите период" 
+                                   FontSize="16" 
+                                   FontWeight="SemiBold" 
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="оба календаря указывают на начало дня 00:00" 
+                                FontSize="12" 
+                                Margin="0,0,0,15"
+                                HorizontalAlignment="Center"/>                  
+
+                        <!-- Дата от -->
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <TextBlock Text="Период от:" 
+                                       Width="100" 
+                                       VerticalAlignment="Center"/>
+                            <DatePicker SelectedDate="{Binding FromDate}"
+                                       Width="200"
+                                       Margin="10,0,0,0"/>
+                        </StackPanel>
+
+                        <!-- Дата до -->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Период до:" 
+                                       Width="100" 
+                                       VerticalAlignment="Center"/>
+                            <DatePicker SelectedDate="{Binding ToDate}"
+                                       Width="200"
+                                       Margin="10,0,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Кнопка расчета -->
+                <Button Grid.Row="2" 
+                        Command="{Binding CalculateIncomeCommand}"
+                        Content="Рассчитать приход по заказам"
+                        Margin="0,20,0,0"
+                        Padding="20,10"
+                        HorizontalAlignment="Center">
+                </Button>
+
+                <!-- Индикатор загрузки -->
+                
+
+                <!-- Результат -->
+                <Border Grid.Row="4" 
+                        Background="{StaticResource LightBackBrush}" 
+                        CornerRadius="8" 
+                        Padding="20"
+                        Margin="0,20,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Общий приход за период" 
+                                   FontSize="14" 
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding TotalIncome, StringFormat=' {0:F2} ₽'}" 
+                                   FontSize="28" 
+                                   FontWeight="Bold" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
