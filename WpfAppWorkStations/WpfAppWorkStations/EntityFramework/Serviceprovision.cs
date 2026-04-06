@@ -18,4 +18,6 @@ public partial class Serviceprovision
     public virtual Order Order { get; set; } = null!;
 
     public virtual Machineservice Service { get; set; } = null!;
+
+    
 }

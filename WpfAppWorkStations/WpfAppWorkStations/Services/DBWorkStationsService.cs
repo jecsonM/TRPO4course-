@@ -342,6 +342,8 @@ namespace WpfAppWorkStations.Services
                 return dbContext.Orders
                     .Include(o => o.Request)
                     .Include(o => o.Serviceprovisions)
+                        .ThenInclude(sp => sp.Service)
+                        .ThenInclude(sp => sp.Relevantcosts)
                     .Include(o => o.Machines)
                     .ToList();
             }
@@ -541,5 +543,99 @@ namespace WpfAppWorkStations.Services
                     .ToList();
             }
         }
+
+
+
+        public List<Machineservice> GetServices()
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                return dbContext.Machineservices.ToList();
+            }
+        }
+
+        public List<Relevantcost> GetRelevantCostsByService(int serviceId)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                return dbContext.Relevantcosts
+                    .Include(rc => rc.Creators)
+                    .Where(rc => rc.ServiceId == serviceId)
+                    .OrderByDescending(rc => rc.SetDate)
+                    .ToList();
+            }
+        }
+
+        public void AddOrEditService(Machineservice service)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                if (service.ServiceId == 0)
+                {
+                    dbContext.Machineservices.Add(service);
+                }
+                else
+                {
+                    var existingService = dbContext.Machineservices.Find(service.ServiceId);
+                    if (existingService == null)
+                    {
+                        throw new ArgumentException($"Услуга с ID {service.ServiceId} не найдена");
+                    }
+
+                    existingService.MachineServiceName = service.MachineServiceName;
+                    dbContext.Entry(existingService).State = EntityState.Modified;
+                }
+
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void AddRelevantCost(Relevantcost relevantCost)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                // Прикрепляем существующую услугу
+                if (relevantCost.Service != null && relevantCost.ServiceId > 0)
+                {
+                    dbContext.Machineservices.Attach(relevantCost.Service);
+                    dbContext.Entry(relevantCost.Service).State = EntityState.Unchanged;
+                }
+
+                // Прикрепляем создателя
+                if (relevantCost.Creators != null && relevantCost.CreatorsId > 0)
+                {
+                    dbContext.Staff.Attach(relevantCost.Creators);
+                    dbContext.Entry(relevantCost.Creators).State = EntityState.Unchanged;
+                }
+
+                dbContext.Relevantcosts.Add(relevantCost);
+                dbContext.SaveChanges();
+            }
+        }
+
+        public void DeleteService(int serviceId)
+        {
+            using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
+            {
+                var service = dbContext.Machineservices.Find(serviceId);
+
+                if (service == null)
+                {
+                    throw new ArgumentException($"Услуга с ID {serviceId} не найдена");
+                }
+
+                // Проверяем, есть ли связанные записи
+                var hasServiceProvisions = dbContext.Serviceprovisions.Any(sp => sp.ServiceId == serviceId);
+                if (hasServiceProvisions)
+                {
+                    throw new InvalidOperationException("Нельзя удалить услугу, так как она используется в заказах");
+                }
+
+                dbContext.Machineservices.Remove(service);
+                dbContext.SaveChanges();
+            }
+        }
+
+
     }
 }

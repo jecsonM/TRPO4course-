@@ -12,7 +12,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Левая панель: список оборудования -->
+        
         <Border Grid.Column="0">
             <Grid>
                 <Grid.RowDefinitions>
@@ -47,7 +47,7 @@
                     </Grid>
                 </Border>
 
-                <!-- Список оборудования -->
+                
                 <ListBox 
                     Grid.Row="1" 
                     ItemsSource="{Binding MachinesViewModels}"
@@ -99,7 +99,7 @@
             </Grid>
         </Border>
 
-        <!-- Правая панель: детальная информация -->
+        
         <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Background="{StaticResource MainBackBrush}">
             <Border Padding="20">
                 <Grid>
@@ -110,7 +110,7 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Заголовок -->
+                    
                     <Border Grid.Row="0" Padding="15">
                         <StackPanel>
                             <TextBlock Text="{Binding CurrentlySelectedMachine.Machine.Model, StringFormat='Детальная информация об оборудовании: {0}'}" 
@@ -121,7 +121,7 @@
                         </StackPanel>
                     </Border>
 
-                    <!-- Форма редактирования -->
+                    
                     <Grid Grid.Row="1" >
                         <Grid>
                             <Grid.RowDefinitions>
@@ -158,7 +158,7 @@
                         </Grid>
                     </Grid>
 
-                    <!-- Кнопки действий -->
+                    
                     <StackPanel Grid.Row="3" 
             Orientation="Horizontal" 
             HorizontalAlignment="Right" 

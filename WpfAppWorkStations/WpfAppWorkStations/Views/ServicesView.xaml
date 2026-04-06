@@ -1,0 +1,239 @@
+﻿<UserControl x:Class="WpfAppWorkStations.Views.ServicesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель: список услуг -->
+        <Border Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Список услуг" 
+                                   FontSize="16" 
+                                   FontWeight="Bold" 
+                                   VerticalAlignment="Center"/>
+
+                        <Button Grid.Column="1" 
+                                Command="{Binding RefreshServicesCommand}"
+                                Content="🔄 Обновить"
+                                Margin="5,0"/>
+
+                        <Button Grid.Column="2" 
+                                Command="{Binding AddNewServiceCommand}"
+                                Content="➕ Добавить"/>
+                    </Grid>
+                </Border>
+
+                <!-- Список услуг -->
+                <ListBox 
+                    Grid.Row="1" 
+                    ItemsSource="{Binding ServicesViewModels}"
+                    SelectedItem="{Binding CurrentlySelectedService}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                    HorizontalContentAlignment="Stretch">
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border>
+                                <Grid Margin="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Row="0" 
+                                               Grid.Column="0" 
+                                               Text="🔧 "/>
+                                    <TextBlock Grid.Row="0" 
+                                               Grid.Column="1" 
+                                               Text="{Binding Service.MachineServiceName}"
+                                               FontWeight="Bold"
+                                               TextWrapping="Wrap"/>
+
+                                    <TextBlock Grid.Row="1" 
+                                               Grid.Column="1" 
+                                               Text="{Binding CurrentPrice, StringFormat='Цена: {0:F2} ₽'}"
+                                               FontSize="11"
+                                               Foreground="Gray"
+                                               Margin="0,2,0,0"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+
+        <!-- Правая панель: детальная информация -->
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Background="{StaticResource MainBackBrush}">
+            <Border Padding="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Заголовок -->
+                    <Border Grid.Row="0" Padding="15">
+                        <StackPanel>
+                            <TextBlock Text="{Binding CurrentlySelectedService.Service.MachineServiceName, StringFormat='Детальная информация об услуге: {0}'}" 
+                                       FontSize="18" 
+                                       FontWeight="Bold"
+                                       TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Форма редактирования -->
+                    <Grid Grid.Row="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Border Grid.Row="0">
+                                <StackPanel>
+                                    <TextBlock Text="Название услуги"/>
+                                    <TextBox Text="{Binding CurrentlySelectedService.MachineServiceName, UpdateSourceTrigger=PropertyChanged}"
+                                             TextWrapping="Wrap"/>
+
+                                    <!-- Текущая цена -->
+                                    <TextBlock Text="Текущая цена" Margin="0,10,0,0"/>
+                                    <TextBlock FontSize="16" FontWeight="Bold">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}{0:F2} ₽">
+                                                <Binding Path="CurrentlySelectedService.CurrentPrice"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- История цен -->
+                            <Border Grid.Row="1" Padding="15" Margin="0 10 0 0">
+                                <StackPanel>
+                                    <TextBlock Text="История цен" 
+                                               FontSize="14" 
+                                               FontWeight="Bold" 
+                                               Margin="0,0,0,10"/>
+
+                                    <!-- Добавление новой цены -->
+                                    <Grid Margin="0,0,0,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBox Grid.Column="0"
+                                                 Text="{Binding NewServicePrice, UpdateSourceTrigger=PropertyChanged}"
+                                                 ToolTip="Введите новую цену (например: 1500.50)"/>
+
+                                        <Button Grid.Column="1"
+                                                Command="{Binding AddNewPriceCommand}"
+                                                Content="➕ установить цену"
+                                                Margin="5,0,0,0"/>
+                                    </Grid>
+
+                                    <!-- Список истории цен -->
+                                    <ListBox ItemsSource="{Binding CurrentlySelectedService.RelevantCosts}" 
+                                             MinHeight="100"
+                                             MaxHeight="250">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border BorderBrush="#E0E0E0" 
+                                                        BorderThickness="0,0,0,1" 
+                                                        Padding="5">
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <TextBlock Grid.Column="0" 
+                                                                   Text="{Binding FormattedDate}"
+                                                                   FontSize="11"
+                                                                   Foreground="Gray"
+                                                                   Width="120"/>
+
+                                                        <TextBlock Grid.Column="1" 
+                                                                   Text="{Binding FormattedPrice}"
+                                                                   FontSize="13"
+                                                                   FontWeight="Bold"
+                                                                   Margin="10,0,0,0"/>
+
+                                                        <TextBlock Grid.Column="2" 
+                                                                   Text="{Binding CreatorName}"
+                                                                   FontSize="10"
+                                                                   Foreground="Gray"
+                                                                   Margin="10,0,0,0"/>
+                                                    </Grid>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Grid>
+
+                    <!-- Кнопка удаления -->
+                    <Button Grid.Row="2" 
+                            Command="{Binding DeleteServiceCommand}"
+                            Content="🗑️ Удалить услугу"
+                            HorizontalAlignment="Left"
+                            Margin="0,15,0,0"
+                            IsEnabled="{Binding CurrentlySelectedService}"
+                            Background="#DC3545"
+                            Foreground="White"/>
+
+                    <!-- Кнопки действий -->
+                    <StackPanel Grid.Row="3" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right" 
+                                Margin="0,20,0,0">
+                        <Button Command="{Binding SaveChangesCommand}"
+                                Content="💾 Сохранить изменения"
+                                IsEnabled="{Binding CurrentlySelectedService.IsChanged}"/>
+
+                        <Button Command="{Binding CancelChangesCommand}"
+                                Content="❌ Отменить изменения"
+                                IsEnabled="{Binding CurrentlySelectedService.IsChanged}"
+                                Margin="10,0,0,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

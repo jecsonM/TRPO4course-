@@ -1,5 +1,5 @@
-﻿// OrderViewModel.cs
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.Collections.ObjectModel;
 using WpfAppWorkStations.EntityFramework;
 using WpfAppWorkStations.Interfaces.ViewModels;
 
@@ -18,7 +18,20 @@ namespace WpfAppWorkStations.ViewModels.EFViewModels
             this.order = order;
             isChanged = false;
         }
+
+        public ObservableCollection<MachineViewModel> Machines
+        {
+            get
+            {
+                return
+                    new ObservableCollection
+    <MachineViewModel>(
+                    order.Machines.Select(m => new MachineViewModel(m))
+                    .ToList()
+                );
+            }
+
+        }
+
     }
 }
-
-

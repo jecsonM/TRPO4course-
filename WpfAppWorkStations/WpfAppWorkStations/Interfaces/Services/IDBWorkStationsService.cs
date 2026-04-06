@@ -37,5 +37,15 @@ namespace WpfAppWorkStations.Interfaces.Services
         void AddOrEditMachine(Machine machine);
         void DeleteMachine(int machineId);
         List<Machine> GetMachinesByClient(int clientId);
+
+
+        
+        List<Machineservice> GetServices();
+        List<Relevantcost> GetRelevantCostsByService(int serviceId);
+        void AddOrEditService(Machineservice service);
+        void AddRelevantCost(Relevantcost relevantCost);
+        void DeleteService(int serviceId);
+
+
     }
 }

@@ -15,6 +15,8 @@ public partial class Staff
 
     public virtual ICollection<Machineservice> Machineservices { get; set; } = new List<Machineservice>();
 
+    public virtual ICollection<Relevantcost> Relevantcosts { get; set; } = new List<Relevantcost>();
+
     public virtual ICollection<Request> Requests { get; set; } = new List<Request>();
 
     public virtual Role? Role { get; set; }

@@ -13,5 +13,8 @@ public partial class Machineservice
 
     public virtual Staff? Creators { get; set; }
 
+    public virtual ICollection<Relevantcost> Relevantcosts { get; set; } = new List<Relevantcost>();
+
     public virtual ICollection<Serviceprovision> Serviceprovisions { get; set; } = new List<Serviceprovision>();
+    public Relevantcost CurrentPrice { get => Relevantcosts.OrderByDescending(rc => rc.SetDate).FirstOrDefault(); }
 }

@@ -18,4 +18,9 @@ public partial class Machine
     public virtual Client Client { get; set; } = null!;
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+    public override string ToString()
+    {
+        return $"{Model} {SerialNumber}";
+    }
 }

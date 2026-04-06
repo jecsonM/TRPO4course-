@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Collections.ObjectModel;
 using System.Security.Claims;
+using System.Windows;
 using WpfAppWorkStations.EntityFramework;
 using WpfAppWorkStations.Enums;
 using WpfAppWorkStations.Interfaces.Services;
@@ -157,10 +158,119 @@ namespace WpfAppWorkStations.ViewModels.Pages
 
                     // Загружаем доступное оборудование для этой заявки
                     LoadAvailableMachines();
+
+                    // Загружаем доступные услуги
+                    LoadAvailableServices();
                 }
 
                 OnPropertyChanged(nameof(CurrentlySelectedOrder));
                 OnPropertyChanged(nameof(CurrentlySelectedRequestForOrder));
+            }
+        }
+
+        [RelayCommand]
+        private void AddService()
+        {
+            if (CurrentlySelectedOrder == null)
+            {
+                MessageBox.Show("Выберите заказ", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (SelectedServiceToAdd == null)
+            {
+                MessageBox.Show("Выберите услугу", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (SelectedMachineForService == null && CurrentlySelectedOrder.Order.Machines.Any())
+            {
+                MessageBox.Show("Выберите оборудование для услуги", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var currentUser = _authorizationService?.CurrentUser;
+            if (currentUser?.Identity == null)
+            {
+                MessageBox.Show("Пользователь не авторизован", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var staff = _DBworkStationsService.GetStaffByLogin(currentUser.Identity.Name);
+            if (staff == null)
+            {
+                MessageBox.Show("Не удалось определить текущего пользователя", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            var serviceProvision = new Serviceprovision
+            {
+                OrderId = CurrentlySelectedOrder.Order.OrderId,
+                ServiceId = SelectedServiceToAdd.Service.ServiceId,
+                Service = SelectedServiceToAdd.Service,
+                MastersId = staff.StaffId,
+                Masters = staff,
+                Amount = ServiceAmount
+            };
+
+            CurrentlySelectedOrder.Order.Serviceprovisions.Add(serviceProvision);
+            CurrentlySelectedOrder.IsChanged = true;
+
+            // Обновляем списки
+            LoadAvailableServices();
+
+            // Сбрасываем выбор
+            SelectedServiceToAdd = null;
+            SelectedMachineForService = null;
+            ServiceAmount = 1;
+
+            OnPropertyChanged(nameof(CurrentlySelectedOrder.Order.Serviceprovisions));
+
+            MessageBox.Show("Услуга успешно добавлена в заказ", "Успех",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+
+
+
+        [RelayCommand]
+        private void AddNewOrder()
+        {
+            Order order = new Order()
+            {
+                CreationDate = DateTime.UtcNow,
+                RequestId = CurrentlySelectedRequestForOrder?.Request.RequestId ?? 0,
+                Machines = new List<Machine>(),
+                Serviceprovisions = new List<Serviceprovision>()
+            };
+            OrderViewModel orderViewModel = new OrderViewModel(order);
+            OrdersViewModels.Add(orderViewModel);
+            CurrentlySelectedOrder = orderViewModel;
+        }
+
+        [RelayCommand]
+        private void RemoveService(Serviceprovision serviceToRemove)
+        {
+            if (CurrentlySelectedOrder != null && serviceToRemove != null)
+            {
+                var result = MessageBox.Show(
+                    $"Удалить услугу \"{serviceToRemove.Service?.MachineServiceName}\" из заказа?",
+                    "Подтверждение удаления",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    CurrentlySelectedOrder.Order.Serviceprovisions.Remove(serviceToRemove);
+                    CurrentlySelectedOrder.IsChanged = true;
+                    LoadAvailableServices();
+                    OnPropertyChanged(nameof(CurrentlySelectedOrder.Order.Serviceprovisions));
+                }
             }
         }
 
@@ -274,18 +384,62 @@ namespace WpfAppWorkStations.ViewModels.Pages
             }
         }
 
-        [RelayCommand]
-        private void AddNewOrder()
+        private void LoadAvailableServices()
         {
-            Order order = new Order()
+            _availableServicesForOrder = new ObservableCollection<ServiceViewModel>();
+
+            if (currentlySelectedOrder?.Order != null)
             {
-                CreationDate = DateTime.UtcNow,
-                RequestId = CurrentlySelectedRequestForOrder?.Request.RequestId ?? 0
-            };
-            OrderViewModel orderViewModel = new OrderViewModel(order);
-            OrdersViewModels.Add(orderViewModel);
-            CurrentlySelectedOrder = orderViewModel;
+                var services = _DBworkStationsService.GetServices();
+                var existingServiceIds = currentlySelectedOrder.Order.Serviceprovisions
+                    .Select(sp => sp.ServiceId)
+                    .ToHashSet();
+
+                var availableServices = services.Where(s => !existingServiceIds.Contains(s.ServiceId));
+
+                foreach (var service in availableServices)
+                {
+                    var serviceVM = new ServiceViewModel(service);
+                    // Загружаем актуальную цену
+                    var costs = _DBworkStationsService.GetRelevantCostsByService(service.ServiceId);
+                    serviceVM.LoadRelevantCosts(costs);
+                    _availableServicesForOrder.Add(serviceVM);
+                }
+            }
+
+            OnPropertyChanged(nameof(AvailableServicesForOrder));
         }
+
+        private ObservableCollection<ServiceViewModel> _availableServicesForOrder;
+        public ObservableCollection<ServiceViewModel> AvailableServicesForOrder
+            => _availableServicesForOrder;
+
+        private ServiceViewModel _selectedServiceToAdd;
+        public ServiceViewModel SelectedServiceToAdd
+        {
+            get => _selectedServiceToAdd;
+            set
+            {
+                _selectedServiceToAdd = value;
+                OnPropertyChanged(nameof(SelectedServiceToAdd));
+            }
+        }
+
+        private MachineViewModel _selectedMachineForService;
+        public MachineViewModel SelectedMachineForService
+        {
+            get => _selectedMachineForService;
+            set
+            {
+                _selectedMachineForService = value;
+                OnPropertyChanged(nameof(SelectedMachineForService));
+            }
+        }
+
+        [ObservableProperty]
+        private int serviceAmount = 1;
+
+
 
         [RelayCommand]
         private void CancelChanges()

@@ -1,4 +1,4 @@
-Scaffold-DbContext "Host=localhost;Port=5432;Database=FamilyRestaraunt;Username=FamilyRestarauntAdmin;Password=FamilyRestarauntMaster;SSL Mode=Prefer;" Npgsql.EntityFrameworkCore.PostgreSQL -schemas "FamiliRestarauntDB" -outputDir EF.Files -ContextDir Context -Force
+Scaffold-DbContext "Host=localhost;Port=5432;Database=MachineServicesDB;Username=MachineServiceUser;Password=MachineServiceUserMaster;SSL Mode=Prefer;" Npgsql.EntityFrameworkCore.PostgreSQL -schemas "MachineServiceDBScheme" -outputDir EntityFramework -ContextDir EntityFramework/Context -Force
 
 host=localhost port=5432 dbname=FamilyRestarauntDB user=FamilyRestarauntAdmin password=FamilyRestarauntMaster
 

@@ -180,26 +180,25 @@ public partial class MachineServicesDbContext : DbContext
 
         modelBuilder.Entity<Relevantcost>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("relevantcosts", "MachineServiceDBScheme");
+            entity.HasKey(e => e.Relevantcostid).HasName("relevantcosts_pkey");
 
+            entity.ToTable("relevantcosts", "MachineServiceDBScheme");
+
+            entity.Property(e => e.Relevantcostid)
+                .UseIdentityAlwaysColumn()
+                .HasColumnName("relevantcostid");
             entity.Property(e => e.CreatorsId).HasColumnName("creators_id");
             entity.Property(e => e.RelevantCost1)
                 .HasColumnType("money")
                 .HasColumnName("relevant_cost");
-            entity.Property(e => e.Relevantcostid)
-                .ValueGeneratedOnAdd()
-                .UseIdentityAlwaysColumn()
-                .HasColumnName("relevantcostid");
             entity.Property(e => e.ServiceId).HasColumnName("service_id");
             entity.Property(e => e.SetDate).HasColumnName("set_date");
 
-            entity.HasOne(d => d.Creators).WithMany()
+            entity.HasOne(d => d.Creators).WithMany(p => p.Relevantcosts)
                 .HasForeignKey(d => d.CreatorsId)
                 .HasConstraintName("fk_relevantcosts_staff");
 
-            entity.HasOne(d => d.Service).WithMany()
+            entity.HasOne(d => d.Service).WithMany(p => p.Relevantcosts)
                 .HasForeignKey(d => d.ServiceId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("fk_relevantcosts_machineservices");
