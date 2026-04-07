@@ -83,9 +83,13 @@
             </form>
         </div>
     </div>
-
+    
+        
     <div class="profile-section">
-        <h2>Мои заявки</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="margin: 0;">Мои заявки</h2>
+                <a href="@Url.Action("DownloadReport", "Account")" class="btn-download">📥 Скачать сводку</a>
+            </div>
         
         @if (Model.Requests != null && Model.Requests.Any())
         {

@@ -697,4 +697,22 @@ textarea.form-control {
             margin-bottom: 15px;
         }
     }
+
+    /* Download button */
+    .btn-download {
+        display: inline-block;
+        background-color: var(--success-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+        .btn-download:hover {
+            background-color: #219a52;
+            text-decoration: none;
+            color: white;
+        }
 }
