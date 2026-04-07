@@ -1,0 +1,173 @@
+﻿@using MachineServices.ViewModels
+@model ProfileViewModel
+
+@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+<div class="page-header">
+    <h1>Личный кабинет</h1>
+    <p>Добро пожаловать, @Model.Client.ContactPersonFullname!</p>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+{
+    <div class="alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert-error">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<div class="profile-card">
+    <div class="profile-section">
+        <h2>Информация о компании</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <label>Название компании:</label>
+                <span>@Model.Client.CompanyName</span>
+            </div>
+            <div class="info-item">
+                <label>Контактное лицо:</label>
+                <span>@Model.Client.ContactPersonFullname</span>
+            </div>
+            <div class="info-item">
+                <label>Телефон:</label>
+                <span>@Model.Client.ContactPhone</span>
+            </div>
+            <div class="info-item">
+                <label>Email:</label>
+                <span>@Model.Client.Email</span>
+            </div>
+            <div class="info-item">
+                <label>Юридический адрес:</label>
+                <span>@Model.Client.MainAddress</span>
+            </div>
+            <div class="info-item">
+                <label>ИНН:</label>
+                <span>@Model.Client.Inn</span>
+            </div>
+            <div class="info-item">
+                <label>КПП:</label>
+                <span>@Model.Client.Kpp</span>
+            </div>
+            @if (!string.IsNullOrEmpty(Model.Client.Notes))
+            {
+                <div class="info-item full-width">
+                    <label>Примечания:</label>
+                    <span>@Model.Client.Notes</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <h2>Создать новую заявку</h2>
+        <div class="create-request-form">
+            <form asp-action="CreateRequest" asp-controller="Account" method="post">
+                @Html.AntiForgeryToken()
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="ServiceAddress">Адрес обслуживания</label>
+                        <input type="text" id="ServiceAddress" name="ServiceAddress" class="form-control" placeholder="Введите адрес, где требуется обслуживание" required>
+                    </div>
+                    <div class="form-group" style="align-self: flex-end;">
+                        <button type="submit" class="btn-primary">Оставить заявку</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <h2>Мои заявки</h2>
+        
+        @if (Model.Requests != null && Model.Requests.Any())
+        {
+            foreach (var request in Model.Requests)
+            {
+                <div class="request-card">
+                    <div class="request-header">
+                        <h3>Заявка №@request.RequestId</h3>
+                        <span class="request-date">от @request.CreationDate.ToString("dd.MM.yyyy")</span>
+                    </div>
+                    
+                    <div class="request-body">
+                        <div class="request-info">
+                            <div class="info-row">
+                                <label>Адрес:</label>
+                                <span>@request.ServiceAddress</span>
+                            </div>
+                            <div class="info-row">
+                                <label>Текущий статус:</label>
+                                <span class="request-status">
+                                    @if (!string.IsNullOrEmpty(request.LastStateName))
+                                    {
+                                        <text>@request.LastStateName от @(request.LastStateDate?.ToString("dd.MM.yyyy") ?? "не указана")</text>
+                                    }
+                                    else
+                                    {
+                                        <text>Статус не определен</text>
+                                    }
+                                </span>
+                            </div>
+                        </div>
+
+                        @if (request.Orders != null && request.Orders.Any())
+                        {
+                            <div class="orders-section">
+                                <h4>Заказы по заявке:</h4>
+                                @foreach (var order in request.Orders)
+                                {
+                                    <div class="order-card">
+                                        <div class="order-header">
+                                            <strong>Заказ №@order.OrderId</strong>
+                                            <span class="order-date">от @order.CreationDate.ToString("dd.MM.yyyy")</span>
+                                        </div>
+                                        <div class="order-body">
+                                            <div class="info-row">
+                                                <label>Адрес доставки:</label>
+                                                <span>@order.ServiceAddress</span>
+                                            </div>
+                                            @if (order.Services != null && order.Services.Any())
+                                            {
+                                                <div class="services-list">
+                                                    <label>Услуги:</label>
+                                                    <ul>
+                                                        @foreach (var service in order.Services)
+                                                        {
+                                                            <li>@service.ServiceName — @service.Amount шт.</li>
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <p class="no-data">Услуги не указаны</p>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="no-data">Нет заказов по этой заявке</p>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="empty-state">
+                <p>У вас пока нет заявок</p>
+            </div>
+        }
+    </div>
+</div>

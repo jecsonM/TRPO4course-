@@ -1,31 +1,53 @@
 ﻿@{
-    ViewData["Title"] = "Главная страница";
+    ViewData["Title"] = "Главная";
 }
 
-<h1>Главная страница</h1>
+<div class="hero-section">
+    <h1>ООО СтанкоСтрой</h1>
+    <p class="hero-subtitle">Ваш надежный партнер в мире станкостроения</p>
+</div>
 
-<p>Вы вошли как: <strong>@ViewBag.UserName</strong></p>
+<div class="features-grid">
+    <div class="feature-card">
+        <h3>Профессионализм</h3>
+        <p>Более 20 лет опыта в производстве и обслуживании промышленного оборудования</p>
+    </div>
+    <div class="feature-card">
+        <h3>Качество</h3>
+        <p>Современное оборудование и строгий контроль качества на всех этапах производства</p>
+    </div>
+    <div class="feature-card">
+        <h3>Надежность</h3>
+        <p>Гарантийное и постгарантийное обслуживание всей поставляемой техники</p>
+    </div>
+    <div class="feature-card">
+        <h3>Инновации</h3>
+        <p>Внедрение передовых технологий и цифровых решений в производственные процессы</p>
+    </div>
+</div>
 
-<h3>Меню:</h3>
-<ul>
-    <li><a asp-controller="Clients" asp-action="Index">Управление Клиентами</a></li>
-    <li><a asp-controller="Machines" asp-action="Index">Управление Станками</a></li>
-    <li><a asp-controller="MachineServices" asp-action="Index">Управление Услугами</a></li>
-    <li><a asp-controller="Orders" asp-action="Index">Управление Клиентами</a></li>
-    <li><a asp-controller="Clients" asp-action="Index">Управление Заказами</a></li>
-    <li><a asp-controller="OrderStates" asp-action="Index">Управление Состояниями заказа</a></li>
-    <li><a asp-controller="RelevantCosts" asp-action="Index">Управление Актуальными ценами</a></li>
-    <li><a asp-controller="RelevantOrderStates" asp-action="Index">Управление Актуальными состояниями заказа</a></li>
-    <li><a asp-controller="Requests" asp-action="Index">Управление Заявками</a></li>
-    <li><a asp-controller="RelevantRequestStates" asp-action="Index">Управление Актуальными состояниями заявок</a></li>
-    <li><a asp-controller="RequestStates" asp-action="Index">Управление Состояниями заявок</a></li>
-    <li><a asp-controller="Roles" asp-action="Index">Управление Ролями</a></li>
-    <li><a asp-controller="ServiceProvisions" asp-action="Index">Управление Предоставляемыми услугами</a></li>
-    <li><a asp-controller="Staffs" asp-action="Index">Управление Сотрудниками</a></li>
-    
-    <form method="post" asp-controller="Account" asp-action="Logout">
-        <button type="submit" class="nav-link btn btn-link">
-            Выход
-        </button>
-    </form>
-</ul>
+<div class="info-section">
+    <h2>Добро пожаловать в СтанкоСтрой</h2>
+    <p>Наша компания специализируется на производстве, поставке и обслуживании металлообрабатывающих станков с ЧПУ. Мы предлагаем комплексные решения для автоматизации производственных процессов предприятий различного масштаба.</p>
+    <p>За годы успешной работы мы зарекомендовали себя как надежный поставщик высокотехнологичного оборудования для ведущих промышленных предприятий России и стран СНГ.</p>
+    <p>Наши преимущества: индивидуальный подход к каждому клиенту, гибкая система скидок, оперативная техническая поддержка и собственный склад запасных частей.</p>
+</div>
+
+<div class="stats-section">
+    <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Довольных клиентов</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Лет на рынке</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Сотрудников</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">Обслуженных станков</div>
+    </div>
+</div>

@@ -12,27 +12,27 @@ namespace MachineServices
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-
+            // Add DbContext
             builder.Services.AddDbContext<MachineServicesDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-            );
-            
-            // Добавляем контекст БД
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // Настраиваем аутентификацию через куки
+            // Add Authentication
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
                     options.LoginPath = "/Account/Login";
-                    options.AccessDeniedPath = "/Account/AccessDenied";
+                    options.LogoutPath = "/Account/Logout";
+                    options.AccessDeniedPath = "/Account/Login";
                 });
 
-            builder.Services.AddSingleton<IPasswordService, PasswordService>();
+            // Add PasswordService (ваш существующий сервис)
+            builder.Services.AddScoped<IPasswordService, PasswordService>();
 
             var app = builder.Build();
 
@@ -40,17 +40,14 @@ namespace MachineServices
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(
@@ -58,14 +55,10 @@ namespace MachineServices
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
-            app.MapControllerRoute(
-                name: "login",
-                pattern: "{*url}",
-                defaults: new { controller = "Account", action = "Login" });
-
-
+            
 
             app.Run();
+
         }
     }
 }

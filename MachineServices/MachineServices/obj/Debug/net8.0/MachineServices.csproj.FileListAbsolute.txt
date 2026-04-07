@@ -269,8 +269,6 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\MachineServices.runtimeconfig.json
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\MachineServices.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\MachineServices.pdb
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Azure.Core.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Azure.Identity.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Humanizer.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -286,7 +284,6 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
@@ -294,7 +291,6 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -306,16 +302,7 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
@@ -334,7 +321,6 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\NuGet.ProjectModel.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\NuGet.Protocol.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\NuGet.Versioning.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.ClientModel.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.CodeDom.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -343,10 +329,7 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Composition.TypedParts.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Formats.Asn1.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Memory.Data.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Runtime.Caching.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
@@ -490,13 +473,6 @@ F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineService
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\obj\Debug\net8.0\MachineServices.csproj.AssemblyReference.cache
 F:\Pictures\мои док(и)\.progi\TRPO4course-\MachineServices\MachineServices\obj\Debug\net8.0\MachineServices.GeneratedMSBuildEditorConfig.editorconfig

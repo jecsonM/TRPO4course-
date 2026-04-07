@@ -300,41 +300,22 @@
 
                                                             <!-- Выбор услуги -->
                                                             <TextBlock Text="Услуга" FontSize="11" Foreground="Gray"/>
-                                                            <ComboBox ItemsSource="{Binding AvailableServicesForOrder}"
+                                                    <ComboBox ItemsSource="{Binding AvailableServicesForOrder}"
                           SelectedItem="{Binding SelectedServiceToAdd}"
                           IsEditable="True"
                           IsTextSearchEnabled="True"
                           Margin="0,0,0,10">
-                                                                <ComboBox.ItemTemplate>
-                                                                    <DataTemplate>
-                                                                        <StackPanel>
-                                                                            <TextBlock FontWeight="Bold" Text="{Binding Service.MachineServiceName}"/>
-                                                                            <TextBlock FontSize="10" Foreground="Gray" 
+                                                        <ComboBox.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel>
+                                                                    <TextBlock FontWeight="Bold" Text="{Binding Service.MachineServiceName}"/>
+                                                                    <TextBlock FontSize="10" Foreground="Gray" 
                                            Text="{Binding CurrentPrice, StringFormat='Цена: {0:F2} ₽'}"/>
-                                                                        </StackPanel>
-                                                                    </DataTemplate>
-                                                                </ComboBox.ItemTemplate>
-                                                            </ComboBox>
-
-                                                            <!-- Выбор оборудования -->
-                                                            <TextBlock Text="Оборудование" FontSize="11" Foreground="Gray"/>
-                                                            <ComboBox ItemsSource="{Binding CurrentlySelectedOrder.Machines}"
-                          SelectedItem="{Binding SelectedMachineForService}"
-                          
-                          IsEditable="True"
-                          IsTextSearchEnabled="True"
-                          Margin="0,0,0,10">
-                                                                <ComboBox.ItemTemplate>
-                                                                    <DataTemplate>
-                                                                        <StackPanel>
-                                                                            <TextBlock FontWeight="Bold" Text="{Binding Machine.Model}"/>
-                                                                            <TextBlock FontSize="10" Foreground="Gray" Text="{Binding Machine.SerialNumber}"/>
-                                                                        </StackPanel>
-                                                                    </DataTemplate>
-                                                                </ComboBox.ItemTemplate>
-                                                            </ComboBox>
-
-                                                            <!-- Количество -->
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </ComboBox.ItemTemplate>
+                                                    </ComboBox>
+                                                    <!-- Количество -->
                                                             <TextBlock Text="Количество" FontSize="11" Foreground="Gray"/>
                                                             <Grid Margin="0,0,0,10">
                                                                 <Grid.ColumnDefinitions>

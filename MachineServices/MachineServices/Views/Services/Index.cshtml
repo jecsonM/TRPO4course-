@@ -1,0 +1,42 @@
+﻿@using MachineServices.ViewModels
+@model List<ServiceListViewModel>
+
+@{
+    ViewData["Title"] = "Список услуг";
+}
+
+<div class="page-header">
+    <h1>Наши услуги</h1>
+    <p>Актуальные цены на услуги по обслуживанию промышленного оборудования</p>
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <div class="services-table-container">
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Название услуги</th>
+                    <th>Цена (руб.)</th>
+                    <th>Дата установки цены</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var service in Model)
+                {
+                    <tr>
+                        <td>@service.MachineServiceName</td>
+                        <td class="price-cell">@service.CurrentPrice.ToString("N2") ₽</td>
+                        <td>@(service.PriceSetDate == DateTime.MinValue ? "Не указана" : service.PriceSetDate.ToString("dd.MM.yyyy"))</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="empty-state">
+        <p>Услуги временно отсутствуют</p>
+    </div>
+}

@@ -7,6 +7,62 @@
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\createrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\createrequestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\requestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\requestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\relevantrequeststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\relevantrequeststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\requeststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\requeststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,28 +71,60 @@
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machineservicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machineservicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\servicelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\servicelistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machineservicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machineservicesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\models\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,24 +134,310 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T04:02:00.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateRequestViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\CreateRequestViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\CreateRequestViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\CreateRequestViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\CreateRequestViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T04:00:05.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RequestState.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\RequestState.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\RequestState.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\RequestState.cs",
+              "RelativeToolTip": "MachineServices\\Models\\RequestState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:58:20.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RequestViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\RequestViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\RequestViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\RequestViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\RequestViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:52:45.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\Order.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Order.cs",
+              "RelativeToolTip": "MachineServices\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:48:31.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RelevantRequestState.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\RelevantRequestState.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\RelevantRequestState.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\RelevantRequestState.cs",
+              "RelativeToolTip": "MachineServices\\Models\\RelevantRequestState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:44:13.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Request.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\Request.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Request.cs",
+              "RelativeToolTip": "MachineServices\\Models\\Request.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:44:05.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Account\\Register.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-07T03:34:21.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:32:23.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\Staff.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Staff.cs",
+              "RelativeToolTip": "MachineServices\\Models\\Staff.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T03:28:31.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Services\\Index.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\Services\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:52:42.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MachineServices\\wwwroot\\css\\site.css",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MachineServices\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAJgCAAAAAAAAAAAkwLcCAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-06T18:34:12.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Profile.cshtml*",
+              "RelativeToolTip": "MachineServices\\Views\\Account\\Profile.cshtml*",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwFQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:33:49.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Home\\About.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:32:38.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:31:42.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Controllers\\ServicesController.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "MachineServices\\Controllers\\ServicesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwCgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:30:15.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:27:42.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ServiceListViewModel.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\ServiceListViewModel.cs",
+              "RelativeDocumentMoniker": "MachineServices\\ViewModels\\ServiceListViewModel.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\ViewModels\\ServiceListViewModel.cs",
+              "RelativeToolTip": "MachineServices\\ViewModels\\ServiceListViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:27:18.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Services\\PasswordService.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Services\\PasswordService.cs",
+              "RelativeToolTip": "MachineServices\\Services\\PasswordService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:21:25.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Client.cs",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "MachineServices\\Models\\Client.cs",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Client.cs",
+              "RelativeToolTip": "MachineServices\\Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:20:59.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\_ViewStart.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:12:22.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MachineServices\\Views\\_ViewImports.cshtml",
+              "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MachineServices\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-06T18:12:21.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\HomeController.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:08:49.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 30,
               "Title": "Machine.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\Machine.cs",
               "RelativeDocumentMoniker": "MachineServices\\Models\\Machine.cs",
@@ -76,65 +450,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "MachineService.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\MachineService.cs",
               "RelativeDocumentMoniker": "MachineServices\\Models\\MachineService.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\MachineService.cs",
               "RelativeToolTip": "MachineServices\\Models\\MachineService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:07:14.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
               "Title": "MachineServicesDbContext.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\MachineServicesDbContext.cs",
               "RelativeDocumentMoniker": "MachineServices\\Models\\MachineServicesDbContext.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Models\\MachineServicesDbContext.cs",
               "RelativeToolTip": "MachineServices\\Models\\MachineServicesDbContext.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAQwAYAAAA5AAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswC0AAACnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:06:06.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Program.cs",
               "RelativeDocumentMoniker": "MachineServices\\Program.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Program.cs",
               "RelativeToolTip": "MachineServices\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABCAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:00:15.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Login.cshtml",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "MachineServices\\Views\\Account\\Login.cshtml",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "MachineServices\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-09T08:11:10.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MachineServices\\Views\\Home\\Index.cshtml",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MachineServices\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswDQAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-06T10:34:11.058Z",
               "EditorCaption": ""
@@ -147,20 +521,20 @@
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\AccountController.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\AccountController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAswCEBAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T08:10:05.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\appsettings.json",
               "RelativeDocumentMoniker": "MachineServices\\appsettings.json",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\appsettings.json",
               "RelativeToolTip": "MachineServices\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-30T12:08:15.006Z",
               "EditorCaption": ""
