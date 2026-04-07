@@ -34,11 +34,29 @@ namespace WpfAppWorkStations.ViewModels.Pages
             _orderStates = new ObservableCollection<OrderStateViewModel>();
 
 
+            
+
+            
+
+            if (_authorizationService != null)
+            {
+                _authorizationService.UserChanged += (cp) => FullRefresh();
+            }
+
+            FullRefresh();
+        }
+
+        public void RefreshOrderState()
+        {
+            _orderStates.Clear();
             List<Orderstate> orderStates = _DBworkStationsService.GetOrderstates();
             if (
-                !_authorizationService.CurrentUser?.IsInRole(AppRoles.Бухгалтер.ToString()) ?? true
-                &&
-                (!_authorizationService.CurrentUser?.IsInRole(AppRoles.Директор.ToString()) ?? true))
+                !(
+                    (_authorizationService.CurrentUser?.IsInRole(AppRoles.Бухгалтер.ToString()) ?? false)
+                    ||
+                    (_authorizationService.CurrentUser?.IsInRole(AppRoles.Директор.ToString()) ?? false)
+                )
+            )
             {
                 orderStates.Remove(orderStates.FirstOrDefault(os => os.OrderStateName == "Одобрен"));
             }
@@ -47,15 +65,6 @@ namespace WpfAppWorkStations.ViewModels.Pages
             {
                 OrderStates.Add(new OrderStateViewModel(orderState));
             }
-
-            RefreshRequests();
-
-            if (_authorizationService != null)
-            {
-                _authorizationService.UserChanged += (cp) => FullRefresh();
-            }
-
-            FullRefresh();
         }
 
         [RelayCommand]
@@ -96,6 +105,7 @@ namespace WpfAppWorkStations.ViewModels.Pages
         [RelayCommand]
         private void FullRefresh()
         {
+            RefreshOrderState();
             RefreshOrders();
             RefreshRequests();
         }

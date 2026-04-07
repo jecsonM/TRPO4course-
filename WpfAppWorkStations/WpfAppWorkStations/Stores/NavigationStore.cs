@@ -1,13 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using WpfAppWorkStations.Interfaces.Services;
+﻿using WpfAppWorkStations.Interfaces.Services;
 using WpfAppWorkStations.Interfaces.ViewModels;
-using WpfAppWorkStations.ViewModels.Pages;
 
 namespace WpfAppWorkStations.Stores
 {
@@ -32,8 +24,6 @@ namespace WpfAppWorkStations.Stores
             }
         }
 
-
-
         public void NavigateTo(Type pageViewModelType)
         {
             if (AllPageViewModels.ContainsKey(pageViewModelType))
@@ -55,7 +45,4 @@ namespace WpfAppWorkStations.Stores
         public event Action CurrentViewModelChanged;
 
     }
-    
-
-
 }

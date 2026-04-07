@@ -52,7 +52,7 @@ namespace MachineServices.Services
                             password,
                             salt,
                             passwordHashSpan.Slice(start: 2 + DEFAULT_SALT_LEN),
-                            iterations: 600_015,
+                            iterations: 600_013,
                             HashAlgorithmName.SHA256
                         );
 

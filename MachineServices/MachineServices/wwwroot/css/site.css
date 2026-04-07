@@ -421,7 +421,7 @@ textarea.form-control {
     .info-item label {
         display: block;
         font-weight: bold;
-        color: var(--text-light);
+        color: var(--dark-text);
         font-size: 0.85rem;
         margin-bottom: 5px;
     }

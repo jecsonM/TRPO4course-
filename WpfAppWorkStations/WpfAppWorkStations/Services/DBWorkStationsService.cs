@@ -24,10 +24,8 @@ namespace WpfAppWorkStations.Services
             {
                 if (order.OrderId == 0)
                 {
-                    // НОВЫЙ ЗАКАЗ
-
-                    // Обрабатываем связанную заявку
-                    if (order.Request != null)
+                    
+                                        if (order.Request != null)
                     {
                         if (order.Request.RequestId > 0)
                         {
@@ -49,8 +47,7 @@ namespace WpfAppWorkStations.Services
                         }
                     }
 
-                    // Обрабатываем оборудование
-                    if (order.Machines != null && order.Machines.Any())
+                                        if (order.Machines != null && order.Machines.Any())
                     {
                         foreach (var machine in order.Machines)
                         {
@@ -62,8 +59,7 @@ namespace WpfAppWorkStations.Services
                         }
                     }
 
-                    // Обрабатываем услуги
-                    if (order.Serviceprovisions != null && order.Serviceprovisions.Any())
+                                        if (order.Serviceprovisions != null && order.Serviceprovisions.Any())
                     {
                         foreach (var serviceProvision in order.Serviceprovisions)
                         {
@@ -155,8 +151,7 @@ namespace WpfAppWorkStations.Services
                         }
                     }
 
-                    // Обновляем услуги
-                    if (order.Serviceprovisions != null)
+                                        if (order.Serviceprovisions != null)
                     {
                         existingOrder.Serviceprovisions.Clear();
                         foreach (var serviceProvision in order.Serviceprovisions)
@@ -300,8 +295,7 @@ namespace WpfAppWorkStations.Services
                 DateTime toDate = to.Date.AddDays(1).AddTicks(-1);
                 DateTime fromDate = from.Date;
 
-                // Получаем все завершенные заказы за период
-                List<int> completedOrderIds = dbContext.Relevantorderstates
+                                List<int> completedOrderIds = dbContext.Relevantorderstates
                     .Where(ros => ros.OrderState.OrderStateName == "Завершён"
                                   && ros.SetDate >= fromDate
                                   && ros.SetDate <= toDate)
@@ -313,14 +307,12 @@ namespace WpfAppWorkStations.Services
 
                 foreach (var orderId in completedOrderIds)
                 {
-                    // Получаем дату завершения конкретного заказа
-                    DateTime completionDate = dbContext.Relevantorderstates
+                                        DateTime completionDate = dbContext.Relevantorderstates
                         .Where(ros => ros.OrderId == orderId && ros.OrderState.OrderStateName == "Завершён")
                         .Select(ros => ros.SetDate)
                         .FirstOrDefault();
 
-                    // Получаем все услуги заказа с их актуальными ценами на момент завершения
-                    List<Serviceprovision> orderServices = dbContext.Serviceprovisions
+                                        List<Serviceprovision> orderServices = dbContext.Serviceprovisions
                         .Include(sp => sp.Service)
                             .ThenInclude(s => s.Relevantcosts)
                         .Where(sp => sp.OrderId == orderId)
@@ -448,8 +440,7 @@ namespace WpfAppWorkStations.Services
                     throw new ArgumentException($"Оборудование с ID {machineId} не найдено");
                 }
 
-                // Проверяем, есть ли связанные заказы
-                var hasOrders = dbContext.Orders.Any(o => o.Machines.Any(m => m.MachineId == machineId));
+                                var hasOrders = dbContext.Orders.Any(o => o.Machines.Any(m => m.MachineId == machineId));
                 if (hasOrders)
                 {
                     throw new InvalidOperationException("Нельзя удалить оборудование, так как оно используется в заказах");
@@ -695,15 +686,13 @@ namespace WpfAppWorkStations.Services
         {
             using (MachineServicesDbContext dbContext = new MachineServicesDbContext())
             {
-                // Прикрепляем существующую услугу
-                if (relevantCost.Service != null && relevantCost.ServiceId > 0)
+                                if (relevantCost.Service != null && relevantCost.ServiceId > 0)
                 {
                     dbContext.Machineservices.Attach(relevantCost.Service);
                     dbContext.Entry(relevantCost.Service).State = EntityState.Unchanged;
                 }
 
-                // Прикрепляем создателя
-                if (relevantCost.Creators != null && relevantCost.CreatorsId > 0)
+                                if (relevantCost.Creators != null && relevantCost.CreatorsId > 0)
                 {
                     dbContext.Staff.Attach(relevantCost.Creators);
                     dbContext.Entry(relevantCost.Creators).State = EntityState.Unchanged;
@@ -725,8 +714,7 @@ namespace WpfAppWorkStations.Services
                     throw new ArgumentException($"Услуга с ID {serviceId} не найдена");
                 }
 
-                // Проверяем, есть ли связанные записи
-                var hasServiceProvisions = dbContext.Serviceprovisions.Any(sp => sp.ServiceId == serviceId);
+                                var hasServiceProvisions = dbContext.Serviceprovisions.Any(sp => sp.ServiceId == serviceId);
                 if (hasServiceProvisions)
                 {
                     throw new InvalidOperationException("Нельзя удалить услугу, так как она используется в заказах");

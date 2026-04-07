@@ -298,7 +298,7 @@ namespace MachineServices.Controllers
             return RedirectToAction("Profile");
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
