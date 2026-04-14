@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|solutionrelative:machineservices\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F87D3D3C-CBFB-4558-94FF-4CA2CAC5ED1A}|MachineServices\\MachineServices.csproj|f:\\pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\trpo4course-\\machineservices\\machineservices\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -134,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Document",
@@ -278,8 +278,7 @@
               "RelativeToolTip": "MachineServices\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAI0BAAAAAAAAAAAUwKcBAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-06T18:34:12.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:34:12.177Z"
             },
             {
               "$type": "Document",
@@ -291,8 +290,7 @@
               "RelativeToolTip": "MachineServices\\Views\\Account\\Profile.cshtml",
               "ViewState": "AQIAAE4AAAAAAAAAAAAYwFUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-06T18:33:49.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:33:49.456Z"
             },
             {
               "$type": "Document",
@@ -316,8 +314,7 @@
               "RelativeToolTip": "MachineServices\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-06T18:31:42.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:31:42.614Z"
             },
             {
               "$type": "Document",
@@ -357,13 +354,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "MachineServices\\Services\\PasswordService.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Services\\PasswordService.cs",
               "RelativeToolTip": "MachineServices\\Services\\PasswordService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowDYAAAAvAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwDYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T18:21:25.845Z",
               "EditorCaption": ""
@@ -414,8 +411,7 @@
               "RelativeToolTip": "MachineServices\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T18:08:49.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:08:49.016Z"
             },
             {
               "$type": "Document",
@@ -491,13 +487,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "MachineServices\\Controllers\\AccountController.cs",
               "ToolTip": "F:\\Pictures\\\u043C\u043E\u0438 \u0434\u043E\u043A(\u0438)\\.progi\\TRPO4course-\\MachineServices\\MachineServices\\Controllers\\AccountController.cs",
               "RelativeToolTip": "MachineServices\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwCIAAAAAAAAA",
+              "ViewState": "AQIAAPoBAAAAAAAAAAAAABoCAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-09T08:10:05.299Z",
               "EditorCaption": ""
